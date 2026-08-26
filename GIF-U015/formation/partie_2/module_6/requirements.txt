@@ -1,0 +1,7 @@
+IPython
+matplotlib
+numpy
+poutyne
+scikit-learn
+scipy
+torch

@@ -1,0 +1,3 @@
+taux_d_apprentissage: 0.01
+algorithme_d_apprentissage: SGD
+fonction_de_perte: BCELoss

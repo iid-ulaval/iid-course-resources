@@ -1,0 +1,62 @@
+- exercise_id: 83b6c852-ccdc-4771-959e-39dd17b4a96b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Les NER sont en mesure d'identifier de nouvelles entités non vues
+      durant l'entraînement. Toutefois, leur robustesse face à de nouvelles formes
+      d'entité (p. ex. un nouveau type d'entité) peut nécessiter de l'ajustement et
+      du réentraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les NER sont en mesure d'identifier de nouvelles entités
+      non vues durant l'entraînement. Toutefois, leur robustesse face à de nouvelles
+      formes d'entité (p. ex. un nouveau type d'entité) peut nécessiter de l'ajustement
+      et du réentraînement.
+- exercise_id: 2cc29a16-e2eb-4f6f-8238-1a08ac24ecf1
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, en identifiant des entités, nous pouvons les extraire.
+  - answer: false
+    score: 0
+    explanation: En identifiant des entités, nous pouvons les extraire.
+- exercise_id: a89aaf95-f06b-489c-a056-8c682b1e402b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: C'est plutôt l'inverse. Toutefois, des approches ont été proposées
+      comme les `SpanCategorizer` de SpaCy pour effectuer ce genre de classification.
+  - answer: false
+    score: 1
+    explanation: Effectivement, c'est plutôt l'inverse. Toutefois, des approches ont
+      été proposées comme les `SpanCategorizer` de SpaCy pour effectuer ce genre de
+      classification.
+- exercise_id: dd8d93c4-d935-49d7-b3d3-982073d2328f
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, en identifiant des entités, nous pouvons ensuite entraîner
+      un modèle permettant de mettre ces entités en relation avec une base de connaissances
+      (p. ex. Wikipédia).
+  - answer: false
+    score: 0
+    explanation: En identifiant des entités, nous pouvons ensuite entraîner un modèle
+      permettant de mettre ces entités en relation avec une base de connaissances
+      (p. ex. Wikipédia).
+- exercise_id: cf1ece56-b273-499e-a1da-dcd3e805721b
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'algorithme de Viterbi sert à estimer les probabilités
+      des différentes options d'une séquence en identifiant les plus pertinentes pour
+      ne pas faire toutes les combinaisons.
+  - answer: false
+    score: 0
+    explanation: L'algorithme de Viterbi sert à estimer les probabilités des différentes
+      options d'une séquence en identifiant les plus pertinentes pour ne pas faire
+      toutes les combinaisons.

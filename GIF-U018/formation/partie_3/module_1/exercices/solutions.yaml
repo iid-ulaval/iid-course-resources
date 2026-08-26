@@ -1,0 +1,56 @@
+- exercise_id: d1257e4c-596e-46b5-a3a4-e9da30cfa5ce
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, le temps de calcul dépendant de la longueur de la séquence
+      est une caractéristique intrinsèque des RNN. L'ajout d'un mécanisme d'attention
+      n'y change rien.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Vrai, le mécanisme d'attention remplace le concept de résumé unique
+      par une séquence de vecteurs contextuels dont le nombre augmente avec la longueur
+      de la séquence d'entrée.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, la difficulté des vecteurs de mots à départager les différents
+      sens des mots polysémiques n'a rien à voir avec l'architecture des réseaux utilisés
+      pour les analyser.
+- exercise_id: 6892e5c3-4430-4b44-890c-3c407eb21649
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, un vecteur contextuel est un vecteur représentant
+      numériquement le sens d'un mot dans son contexte d'utilisation.
+  - answer: false
+    score: 0
+    explanation: Faux, un vecteur contextuel est un vecteur représentant numériquement
+      le sens d'un mot dans son contexte d'utilisation.
+- exercise_id: 89510d86-e94c-455b-a822-d48812929a9c
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux. La requête est appliquée à la clé de chaque élément pour déterminer
+      le degré d'attention qu'il va recevoir.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux. La valeur d'un élément est multipliée par son facteur d'attention
+      pour obtenir sa contribution au vecteur final du mécanisme d'attention.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Vrai. Dans un réseau utilisant l'attention, le RNN produit des vecteurs
+      contextuels, mais ceux-ci ne font pas partie du mécanisme d'attention en tant
+      que tel.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Faux. La requête est appliquée à la clé de chaque élément pour déterminer
+      le degré d'attention qu'il va recevoir.

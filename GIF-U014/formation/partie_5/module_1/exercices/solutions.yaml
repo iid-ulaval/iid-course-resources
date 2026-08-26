@@ -1,0 +1,35 @@
+- exercise_id: 517ca854-bda4-4a20-9796-983796da3439
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Comme ces performances sont calculées sur le jeu d'entraînement,
+      on ne sait pas a priori quel modèle généralisera le mieux. En effet, la meilleure
+      performance apparente du modèle A (en entraînement) pourrait s'expliquer par
+      du surapprentissage.
+  - answer: false
+    score: 1
+    explanation: Effectivement, comme ces performances sont calculées sur le jeu d'entraînement,
+      on ne sait pas a priori quel modèle généralisera le mieux. La meilleure performance
+      apparente du modèle A (en entraînement) pourrait s'expliquer par du surapprentissage.
+- exercise_id: 2ba6fd02-f840-484e-93a4-46cc129ea053
+  reference_solution: '2'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Faux, si on se souvient bien, une valeur d'AUROC de 0,57 est juste
+      un peu mieux qu'un classificateur aléatoire. De plus, le modèle semble avoir
+      des performances similaires entre les deux ensembles de données. Ces deux observations
+      sont semblent être des symptômes de sous-apprentissage.
+  - answer: 2
+    score: 1
+    explanation: Si on se souvient bien, une valeur d'AUROC de 0,57 est juste un peu
+      mieux qu'un classificateur aléatoire. De plus, le modèle semble avoir des performances
+      similaires entre les deux ensembles de données. Ces deux observations sont semblent
+      être des symptômes de sous-apprentissage.
+  - answer: 3
+    score: 0
+    explanation: Faux, si on se souvient bien, une valeur d'AUROC de 0,57 est juste
+      un peu mieux qu'un classificateur aléatoire. De plus, le modèle semble avoir
+      des performances similaires entre les deux ensembles de données. Ces deux observations
+      sont semblent être des symptômes de sous-apprentissage.

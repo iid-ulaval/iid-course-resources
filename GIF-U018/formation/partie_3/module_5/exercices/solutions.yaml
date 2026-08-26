@@ -1,0 +1,32 @@
+- exercise_id: ce83140f-93b2-4e0d-90b1-3703e6101d8b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Désolé, même si la recherche en faisceau permet généralement d'obtenir
+      de meilleurs résultats, son temps de traitement accru peut justifier l'utilisation
+      de la recherche gourmande dans certains cas d'utilisation.
+  - answer: false
+    score: 1
+    explanation: Exactement, même si la recherche en faisceau permet généralement
+      d'obtenir de meilleurs résultats, son temps de traitement accru peut justifier
+      l'utilisation de la recherche gourmande dans certains cas d'utilisation.
+- exercise_id: a4d53598-ae88-4188-b1e4-7048a1cc0341
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Exactement.
+  - answer: false
+    score: 0
+    explanation: Faux, la température permet de faire exactement cela.
+- exercise_id: 74151fec-3aa9-4293-a0d5-23544a23d216
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, cette tendance est observée dans la performance des
+      modèles.
+  - answer: false
+    score: 0
+    explanation: Faux, nous observons cette tendance dans la performance des modèles.

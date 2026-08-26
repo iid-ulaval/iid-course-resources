@@ -1,0 +1,41 @@
+- exercise_id: 1a172640-2ded-43ee-9a65-93ce46539ecf
+  reference_solution: '# déterminer les longueurs des lignes
+
+    longueur_lignes = list(map(len, data))
+
+
+    # produire et afficher l''histogramme
+
+    plt.hist(longueur_lignes, bins=50)
+
+    plt.show()
+
+
+    # affecter la variable de succès
+
+    succès = True'
+  feedback_list: null
+- exercise_id: 103980ea-9597-4ffa-bfdc-4e6cf71df666
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'histogramme présente les données avec une distribution gaussienne
+      (en forme de cloche).
+  - answer: false
+    score: 1
+    explanation: L'histogramme présente les données avec une distribution gaussienne
+      plutôt qu'uniforme.
+- exercise_id: 723983e4-8f97-4b3c-b887-db0c30ad0d4b
+  reference_solution: 'longueur_lignes = list(map(len, data))
+
+
+    plt.hist([l for l in longueur_lignes if l < 100], bins=25)
+
+    plt.show()
+
+
+    # affecter la variable de succès
+
+    succès = True'
+  feedback_list: null

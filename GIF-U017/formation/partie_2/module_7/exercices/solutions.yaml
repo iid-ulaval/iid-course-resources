@@ -1,0 +1,3 @@
+- exercise_id: a67c15de-033c-4acb-8a4d-b044be56955a
+  reference_solution: 'réponse = {"precision_recall_fscore_support": {"average": "micro"}}'
+  feedback_list: null

@@ -1,0 +1,10 @@
+gensim
+nltk
+numpy
+pandas
+paxutils
+plotly
+poutyne
+torch
+torchtext
+tqdm

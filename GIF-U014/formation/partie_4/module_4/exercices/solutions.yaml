@@ -1,0 +1,27 @@
+- exercise_id: 8f5c15a6-aa17-473f-b757-f757a83be491
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, lors d'un débalancement des données, il est important
+      d'analyser les bonnes métriques. Le score F1 est très adapté pour les données
+      déséquilibrées.
+  - answer: false
+    score: 0
+    explanation: Lors d'un débalancement des données, il est important d'analyser
+      les bonnes métriques. Le score F1 est très adapté pour les données déséquilibrées.
+      Il ne serait donc pas nécessaire de refaire un modèle.
+- exercise_id: aefde952-f599-4163-a06b-b7bfe0fd4b64
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, comme plusieurs données seront dupliquées, le modèle
+      risque de surapprendre. À l'opposé, comme les données synthétiques ne sont pas
+      des duplications de données existantes, ce type d'échantillonnage sera moins
+      sensible au surapprentissage.
+  - answer: false
+    score: 0
+    explanation: Plusieurs données seront dupliquées, le modèle risque de surapprendre.
+      À l'opposé, comme les données synthétiques ne sont pas des duplications de données
+      existantes, ce type d'échantillonnage sera moins sensible au surapprentissage.

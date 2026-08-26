@@ -1,0 +1,81 @@
+- exercise_id: 7cb64712-1508-4d1b-b1af-5e48c69e10b1
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, le RNN classique souffre de nombreux problèmes résolus par
+      les RNN à portes qui vont nécessairement améliorer les résultats.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, les RNN à portes vont nécessairement améliorer les
+      résultats par rapport au RNN classique.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, les RNN à portes vont nécessairement améliorer les résultats
+      par rapport au RNN classique.
+- exercise_id: 7843fe5b-cab7-41c0-9388-5438daaf0776
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, les LSTM ne sont pas nécessairement meilleurs que le GRU.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, les GRU ne sont pas nécessairement meilleurs que le LSTM.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Effectivement, cela va dépendre de la situation.
+- exercise_id: 1a76eb62-e67c-4063-a19b-9a947431961b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, les RNN peuvent faire de la classification de séquences.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les RNN peuvent faire de la classification de séquences.
+- exercise_id: b9d77e02-73f0-4747-a508-e356933684df
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, il s'agit du même algorithme.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il s'agit du même algorithme.
+- exercise_id: b4d0d7da-5a43-4d31-9685-2c229d5f684c
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'exactitude globale est rarement une bonne métrique
+      à utiliser pour évaluer un NER, car le jeu de données est toujours déséquilibré
+      en faveur des mots hors entité.
+  - answer: false
+    score: 0
+    explanation: Faux, puisque les données sont déséquilibrées, l'exactitude globale
+      est rarement une bonne métrique à utiliser pour évaluer un NER.
+- exercise_id: 9d0e0e7d-6e47-48b4-a704-38f6b3a3ae28
+  reference_solution: '{1}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 1
+    explanation: En effet, les RNN à portes ont un gradient plus stable durant l'entraînement.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, l'ajout de la fonction de porte n'a pas d'effet direct sur
+      la taille du jeu de données pouvant être utilisé pour l'entraînement de RNN
+      à portes versus RNN classique.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, cela ne correspond pas à une différence entre les deux types
+      de RNN.

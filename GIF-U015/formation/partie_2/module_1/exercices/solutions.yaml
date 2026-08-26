@@ -1,0 +1,20 @@
+- exercise_id: c307c576-b534-44e0-8029-ab2c12c95b7c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Le perceptron inclut aussi un biais $b$ dans ces composantes.
+  - answer: false
+    score: 1
+    explanation: En effet, il manque le biais.
+- exercise_id: 2ed5e116-83cc-45c9-affb-b3ef68191a80
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, ces deux fonctions sont comprises entre 0 et 1 et
+      peuvent donc être interprétées comme des probabilités.
+  - answer: false
+    score: 0
+    explanation: Ces deux fonctions sont comprises entre 0 et 1 et peuvent donc être
+      interprétées comme des probabilités.

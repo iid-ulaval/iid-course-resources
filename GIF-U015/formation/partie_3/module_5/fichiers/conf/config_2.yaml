@@ -1,0 +1,8 @@
+defaults:
+  - reseau: lineaire
+  - optimisation: adam
+  - _self_
+
+hyperparamètres:
+  nombre_de_cycles: 100
+  taille_de_mini-batchs: 32

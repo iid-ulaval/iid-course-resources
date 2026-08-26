@@ -1,0 +1,43 @@
+- exercise_id: 56f07a83-7e5c-4e49-836a-16d305afaebf
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Les mots les plus fréquents dans un document sont souvent les moins
+      utiles.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, ce sont les mots les plus importants dans un document.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: L'encodage TF-IDF met l'accent sur les mots les plus importants dans
+      un document.
+- exercise_id: 79667fbf-14ac-46be-a763-e316217b1f20
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: 'Effectivement, le TF-IDF permet de transformer (c.-à-d. d’encoder)
+      un texte en un vecteur de mots plus dense et mieux adapté qu''avec une approche
+      par sac de mots par exemple. '
+  - answer: false
+    score: 0
+    explanation: 'Le TF-IDF permet de transformer (c.-à-d. d’encoder) un texte en
+      un vecteur de mots plus dense et mieux adapté qu''avec une approche par sac
+      de mots par exemple. '
+- exercise_id: 1d103038-fb91-4c2e-9b23-ef91d1cf10be
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, le vocabulaire est défini sur l’ensemble d’entraînement
+      puisque ce dernier représente le jeu de données de référence sur lequel un modèle
+      soit se baser pour prendre des décisions sur de futures données.
+  - answer: false
+    score: 0
+    explanation: Le vocabulaire est défini sur l’ensemble d’entraînement puisque ce
+      dernier représente le jeu de données de référence sur lequel un modèle soit
+      se baser pour prendre des décisions sur de futures données.

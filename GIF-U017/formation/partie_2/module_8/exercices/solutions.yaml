@@ -1,0 +1,29 @@
+- exercise_id: 92e52b3c-b912-41bf-9e3f-ee38f6beaef7
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'ensemble de validation provient d'un sous-ensemble de l'ensemble
+      d'entraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, l'ensemble de validation provient d'un sous-ensemble
+      de l'ensemble d'entraînement.
+- exercise_id: 9e542b62-385a-4abb-a36f-617ddb5964ce
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, Si l’on utilise plusieurs fois l'ensemble de test,
+      on fait du surapprentissage sur cet ensemble puisque nous faisons des choix
+      en fonction de cet ensemble. Il est préférable d’utiliser pour cela l‘ensemble
+      de validation. Quant à l’ensemble de test, il ne sert qu’à la toute fin de l’entraînement
+      pour évaluer la performance de notre modèle avec des données jamais vues par
+      le modèle.
+  - answer: false
+    score: 0
+    explanation: Si l’on utilise plusieurs fois l'ensemble de test, on fait du surapprentissage
+      sur cet ensemble puisque nous faisons des choix en fonction de cet ensemble.
+      Il est préférable d’utiliser pour cela l‘ensemble de validation. Quant à l’ensemble
+      de test, il ne sert qu’à la toute fin de l’entraînement pour évaluer la performance
+      de notre modèle avec des données jamais vues par le modèle.

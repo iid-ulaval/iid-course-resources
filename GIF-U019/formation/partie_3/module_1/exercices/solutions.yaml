@@ -1,0 +1,56 @@
+- exercise_id: 3678a91a-df7e-4b5f-a9a3-89848732fb54
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: La modification « rogner » (crop) n'est pas un bon choix puisqu'elle
+      peut modifier des images et changer le nombre affiché. Par exemple, un 8 peut
+      ressembler à un 0.
+  - answer: false
+    score: 1
+    explanation: Effectivement, la modification « rogner » (crop) n'est pas un bon
+      choix puisqu'elle peut modifier des images et changer le nombre affiché. Par
+      exemple, un 8 peut ressembler à un 0.
+- exercise_id: 3f0dc04e-592b-40dc-87c8-cb755cdda4f9
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: La modification de réflexion horizontale (horizontal flip) n'est
+      pas un bon choix puisqu'elle peut modifier des images et changer le nombre affiché.
+      Par exemple, un 2 peut ressembler à un 6.
+  - answer: false
+    score: 1
+    explanation: Effectivement, la modification de réflexion horizontale (horizontal
+      flip) n'est pas un bon choix puisqu'elle peut modifier des images et changer
+      le nombre affiché. Par exemple, un 2 peut ressembler à un 6.
+- exercise_id: 066627c8-0c6c-4f79-90ce-af96dc81477b
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, la modification de luminosité et de saturation est
+      une transformation intéressante pour ce genre d'images puisqu'elle ne les dénature
+      pas. Cela ne devrait pas affecter leur classification.
+  - answer: false
+    score: 0
+    explanation: La modification de luminosité et de saturation est une transformation
+      intéressante pour ce genre d'images puisqu'elle ne les dénature pas. Cela ne
+      devrait pas affecter leur classification.
+- exercise_id: 0790bbe5-234c-42bf-bb91-63c87b02a71f
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, cette procédure génère des images réalistes pouvant
+      être rencontrées dans un contexte de conduite. Cela permet d'améliorer la robustesse
+      du modèle face à ce genre d'exemples puisque ceux-ci auront été vus durant l'entraînement.
+      Toutefois, l'entraînement d'un modèle de conduite autonome requiert des données
+      beaucoup plus complexes et variées que celles générées ici.
+  - answer: false
+    score: 0
+    explanation: Cette procédure génère des images réalistes pouvant être rencontrées
+      dans un contexte de conduite. Cela permet d'améliorer la robustesse du modèle
+      face à ce genre d'exemples puisque ceux-ci auront été vus durant l'entraînement.
+      Toutefois, l'entraînement d'un modèle de conduite autonome requiert des données
+      beaucoup plus complexes et variées que celles générées ici.

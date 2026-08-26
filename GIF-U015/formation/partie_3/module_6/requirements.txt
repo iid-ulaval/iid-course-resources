@@ -1,0 +1,6 @@
+matplotlib
+mlflow
+poutyne
+scikit-learn
+torch
+wandb

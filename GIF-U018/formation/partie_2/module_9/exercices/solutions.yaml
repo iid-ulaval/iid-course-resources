@@ -1,0 +1,65 @@
+- exercise_id: 422b440e-2689-4a70-a1e1-c94336758118
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les approches bidirectionnelles ou multicouches s'appliquent
+      à tous les types de cellules utilisés par les RNN.
+  - answer: false
+    score: 0
+    explanation: Les approches bidirectionnelles ou multicouches s'appliquent à tous
+      les types de cellules utilisés par les RNN.
+- exercise_id: 64d8b823-b998-47fd-acda-fc5cf38c1fa5
+  reference_solution: '{1}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 1
+    explanation: Effectivement, les deux réseaux sont composés de deux cellules LSTM
+      et d'une couche de classification pleinement connectée. Cette couche de classification
+      est cependant deux fois plus grande pour le RNN bidirectionnel, car elle prend
+      en entrée les vecteurs résumés de chaque direction. La couche de classification
+      d'un RNN multicouche prend en entrée uniquement le résumé produit par la dernière
+      couche.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Les deux réseaux sont composés de deux cellules LSTM et d'une couche
+      de classification pleinement connectée. Cette couche de classification est cependant
+      deux fois plus grande pour le RNN bidirectionnel, car elle prend en entrée les
+      vecteurs résumés de chaque direction. La couche de classification d'un RNN multicouche
+      prend en entrée uniquement le résumé produit par la dernière couche.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Les deux réseaux sont composés de deux cellules LSTM et d'une couche
+      de classification pleinement connectée. Cette couche de classification est cependant
+      deux fois plus grande pour le RNN bidirectionnel, car elle prend en entrée les
+      vecteurs résumés de chaque direction. La couche de classification d'un RNN multicouche
+      prend en entrée uniquement le résumé produit par la dernière couche.
+- exercise_id: 873ca032-dc2e-4552-b787-8ee0a9a52b9c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, ils ne sont pas obligés d'avoir la même architecture.
+  - answer: false
+    score: 1
+    explanation: Effectivement, ils ne sont pas obligés d'avoir la même architecture.
+- exercise_id: 825c6479-f934-4ae4-a4d1-7817652b20ce
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, un décodeur peut être multicouche.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, un décodeur peut être un GRU ou un RNN classique ou autre type
+      de cellule.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Effectivement, un encodeur ne peut pas être bidirectionnel de par
+      la définition d'une architecture Seq2Seq.

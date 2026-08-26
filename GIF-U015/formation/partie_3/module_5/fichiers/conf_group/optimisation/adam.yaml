@@ -1,0 +1,3 @@
+taux_d_apprentissage: 0.1
+algorithme_d_apprentissage: ADAM
+fonction_de_perte: BCELoss

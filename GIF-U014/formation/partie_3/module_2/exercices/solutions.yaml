@@ -1,0 +1,38 @@
+- exercise_id: 95545838-26fb-4e93-a284-b3b14c0bd710
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'interprétation des coefficients dans la régression logistique est
+      beaucoup plus complexe. Il est facile d'affirmer par exemple qu'une variable
+      aura un effet positif, mais la quantification de cet impact est plus complexe
+      à expliquer.
+  - answer: false
+    score: 1
+    explanation: Effectivement, l'interprétation des coefficients dans la régression
+      logistique est beaucoup plus complexe. Il est facile d'affirmer par exemple
+      qu'une variable aura un effet positif, mais la quantification de cet impact
+      est plus complexe à expliquer.
+- exercise_id: 030b0762-b84a-4f86-acbd-515eb6aba0fa
+  reference_solution: '3'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: On peut remarquer que le terme de droite est multiplié par 0 lorsque
+      $y$ prend la valeur 1.
+  - answer: 2
+    score: 0
+    explanation: On peut remarquer que le terme de droite est multiplié par 0 lorsque
+      $y$ prend la valeur 1.
+  - answer: 3
+    score: 1
+    explanation: En effet, on peut remarquer que le terme de droite est multiplié
+      par 0 lorsque $y$ prend la valeur 1.
+  - answer: 4
+    score: 0
+    explanation: On peut remarquer que le terme de droite est multiplié par 0 lorsque
+      $y$ prend la valeur 1.
+  - answer: 5
+    score: 0
+    explanation: On peut remarquer que le terme de droite est multiplié par 0 lorsque
+      $y$ prend la valeur 1.

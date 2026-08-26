@@ -1,0 +1,50 @@
+- exercise_id: 2b56508d-ce69-4274-85a0-76a30272f4a8
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Exactement, on peut entraîner un réseau à partir d'une table de vecteurs
+      vide, mais les vecteurs obtenus avec Word2Vec ou FastText permettent d'avoir
+      un bon point de départ en tirant profit d'un jeu de données beaucoup plus grand
+      que le nôtre. Les transformeurs préentraînés présentés dans ce module sont un
+      exemple d'application du même principe à un niveau d'analyse linguistique supérieur.
+  - answer: false
+    score: 0
+    explanation: Faux, on peut entraîner un réseau à partir d'une table de vecteurs
+      vide, mais les vecteurs obtenus avec Word2Vec ou FastText permettent d'avoir
+      un bon point de départ en tirant profit d'un jeu de données beaucoup plus grand
+      que le nôtre. Les transformeurs préentraînés présentés dans ce module sont un
+      exemple d'application du même principe à un niveau d'analyse linguistique supérieur.
+- exercise_id: 52e1694a-b371-4ba3-bbbf-4cd39855d5a2
+  reference_solution: '{4}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, la classification de textes, comme la majorité des tâches de
+      TALN, peuvent bénéficier d'un préentraînement autosupervisé.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, la reconnaissance d'entités nommées, comme la majorité des
+      tâches de TALN, peuvent bénéficier d'un préentraînement autosupervisé.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, la réponse aux questions, comme la majorité des tâches de TALN,
+      peuvent bénéficier d'un préentraînement autosupervisé.
+  - answer: !!set
+      4: null
+    score: 1
+    explanation: Vrai, comme la majorité des tâches de TALN, ces trois tâches peuvent
+      bénéficier d'un préentraînement autosupervisé.
+- exercise_id: 08d7c7df-2d3d-4c04-abb5-14bdf3e50df4
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Exactement.
+  - answer: false
+    score: 0
+    explanation: Faux, la bidirectionnalité de BERT améliore les performances par
+      rapport à GPT.

@@ -1,0 +1,58 @@
+- exercise_id: ded5eb44-85ec-434b-8d0a-e7434f4e034b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'utilisation d'un sous-échantillon en phase de prototypage et de
+      développement est bénéfique, car il facilite la boucle d'interaction avec nos
+      hypothèses. Il est préférable de tester de nouvelles idées et architectures
+      avec un nombre restreint de données pour confirmer ou infirmer notre intuition.
+      Cela évite aussi de lancer inutilement des entraînements pouvant s'étirer sur
+      plusieurs heures. Cela facilite également le débogage de la boucle d'entraînement.
+      Toutefois, il est important de valider nos modèles les plus prometteurs sur
+      l'ensemble des données disponibles (en excluant bien sûr les données de tests
+      de l'entraînement).
+  - answer: false
+    score: 1
+    explanation: Effectivement, l'utilisation d'un sous-échantillon en phase de prototypage
+      et de développement est bénéfique, car il facilite la boucle d'interaction avec
+      nos hypothèses. Il est préférable de tester de nouvelles idées et architectures
+      avec un nombre restreint de données pour confirmer ou infirmer notre intuition.
+      Cela évite aussi de lancer inutilement des entraînements pouvant s'étirer sur
+      plusieurs heures. Cela facilite également le débogage de la boucle d'entraînement.
+      Toutefois, il est important de valider nos modèles les plus prometteurs sur
+      l'ensemble des données disponibles (en excluant bien sûr les données de tests
+      de l'entraînement).
+- exercise_id: 8f6feeec-d305-4425-8eaa-32fc42d39e15
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il est important que les données d'entraînement soient
+      les plus représentatives des données réelles; cette règle s'applique également
+      au sous-échantillon. Le sous-échantillon doit ainsi avoir des classes en proportions
+      similaires et les attributs des données doivent être similaires.
+  - answer: false
+    score: 0
+    explanation: Il est important que les données d'entraînement soient les plus représentatives
+      des données réelles; cette règle s'applique également au sous-échantillon. Le
+      sous-échantillon doit ainsi avoir des classes en proportions similaires et les
+      attributs des données doivent être similaires.
+- exercise_id: 80d8f6cd-0461-450a-8b44-53f01ee1cdde
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Puisque les données sont ordonnées par classe, en sélectionnant les
+      $n$ premières données, nous nous retrouvons à ne pas avoir toutes les classes
+      dans le sous-échantillon. Il est donc important de bien construire un sous-échantillon
+      en effectuant une pige aléatoire et en s'assurant que les distributions sont
+      similaires entre le sous-échantillon et l'ensemble du jeu de données.
+  - answer: false
+    score: 1
+    explanation: Effectivement, puisque les données sont ordonnées par classe, en
+      sélectionnant les $n$ premières données, nous nous retrouvons à ne pas avoir
+      toutes les classes dans le sous-échantillon. Il est donc important de bien construire
+      un sous-échantillon en effectuant une pige aléatoire et en s'assurant que les
+      distributions sont similaires entre le sous-échantillon et l'ensemble du jeu
+      de données.

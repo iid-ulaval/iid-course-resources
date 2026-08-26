@@ -1,0 +1,12 @@
+- exercise_id: cce45e85-d73e-43c1-9cbf-ca2af5d59fec
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, l'arrêt prématuré (avec une durée de patience adéquate)
+      aurait probablement permis d'arrêter l'apprentissage autour de 10 époques, lorsque
+      débute le surapprentissage.
+  - answer: false
+    score: 0
+    explanation: L'arrêt prématuré (avec une durée de patience adéquate) aurait probablement
+      permis d'arrêter l'apprentissage autour de 10 époques, lorsque débute le surapprentissage.

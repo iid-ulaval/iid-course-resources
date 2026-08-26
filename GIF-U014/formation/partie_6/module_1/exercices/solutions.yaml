@@ -1,0 +1,26 @@
+- exercise_id: 04b7f51a-3772-4d3a-ac79-05ec25ab029e
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, ces deux fonctions sont comprises entre 0 et 1 et
+      peuvent donc être interprétées comme des probabilités.
+  - answer: false
+    score: 0
+    explanation: Ces deux fonctions sont comprises entre 0 et 1 et peuvent donc être
+      interprétées comme des probabilités.
+- exercise_id: f4e27fa4-2529-4f9b-8611-e09e44e75f4a
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Cette modélisation est non supervisée. Cette technique est souvent
+      utilisée dans la détection d'anomalies. Les données qui possèderont des caractéristiques
+      atypiques seront vraisemblablement projetées dans des zones à faible densité
+      de la loi normale. On pourra ensuite les distinguer comme anormale.
+  - answer: false
+    score: 1
+    explanation: En effet, cette modélisation est non supervisée. Cette technique
+      est souvent utilisée dans la détection d'anomalies. Les données qui possèderont
+      des caractéristiques atypiques seront vraisemblablement projetées dans des zones
+      à faible densité de la loi normale. On pourra ensuite les distinguer comme anormale.

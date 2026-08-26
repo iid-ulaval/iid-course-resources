@@ -1,0 +1,9 @@
+PIL
+matplotlib
+numpy
+paxutils
+poutyne
+segmentation_models_pytorch
+torch
+torchmetrics
+torchvision

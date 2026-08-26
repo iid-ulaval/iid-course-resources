@@ -1,0 +1,17 @@
+- exercise_id: 3f432f1e-e7ec-40bb-b97d-f450a4bbd06f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: false
+    score: 1
+    explanation: En combinant plusieurs jeu de données nettoyés, on doit tout de même
+      s'assurer que les données aient les mêmes standards. Dans cet exemple, on pourrait
+      penser que cette forte corrélation provient de la valeur de l'argent du pays.
+      Il faudrait donc s'assurer qu'on convertisse les valeurs dans la même devise
+      pour s'assurer qu'il n'y ait pas de fausse corrélation.
+  - answer: false
+    score: 0
+    explanation: En effet, en combinant plusieurs jeu de données nettoyés, on doit
+      tout de même s'assurer que les données aient les mêmes standards. Dans cet exemple,
+      on pourrait penser que cette forte corrélation provient de la valeur de l'argent
+      du pays. Il faudrait donc s'assurer qu'on convertisse les valeurs dans la même
+      devise pour s'assurer qu'il n'y ait pas de fausse corrélation.

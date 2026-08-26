@@ -1,0 +1,31 @@
+- exercise_id: b11a5c03-dac4-4b6f-83dc-ff57d367c56b
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, un N-gramme peut aussi utiliser des caractères comme
+      unités. Ça s'appelle des N-grammes de caractères.
+  - answer: false
+    score: 0
+    explanation: Un N-gramme peut aussi utiliser des caractères comme unités. Ça s'appelle
+      des N-grammes de caractères.
+- exercise_id: 64c6ffed-47d6-4545-8913-94309dd7ccda
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Le nettoyage des données est autant (sinon plus) important lorsque
+      l'on représente les textes avec ce type de représentation plutôt qu'avec les
+      approches précédentes.
+  - answer: false
+    score: 1
+    explanation: Effectivement, le nettoyage des données est autant (sinon plus) important
+      lorsque l'on représente les textes avec ce type de représentation plutôt qu'avec
+      les approches précédentes.
+- exercise_id: 0deead00-69fa-4d7e-8bb4-1b05d0669cb8
+  reference_solution: "def n_grammes_caracteres(sentence, n):\n    return [\"\".join(n_grammes)\
+    \ for n_grammes in list(ngrams(sentence, n=n))]"
+  feedback_list: null
+- exercise_id: 7f8fae6f-f08d-42ca-9e6e-9eb762cf09de
+  reference_solution: 'réponse = {"analyzer": "char"}'
+  feedback_list: null

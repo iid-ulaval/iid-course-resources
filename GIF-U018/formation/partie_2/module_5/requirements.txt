@@ -1,0 +1,7 @@
+numpy
+pandas
+paxutils
+poutyne
+scikit-learn
+torch
+torchtext

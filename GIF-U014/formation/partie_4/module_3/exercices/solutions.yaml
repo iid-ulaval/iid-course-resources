@@ -1,0 +1,28 @@
+- exercise_id: 8707cd92-3359-4d00-ab91-b3d11cda927b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Si on obtient une aire sous la courbe ROC de 1, on peut conclure
+      que les valeurs manquantes sont probablement facilement trouvables à partir
+      des autres variables exogènes. On peut donc supposer que les valeurs aberrantes
+      ne sont pas MCAR.
+  - answer: false
+    score: 1
+    explanation: Effectivement, si on obtient une aire sous la courbe ROC de 1, on
+      peut conclure que les valeurs manquantes sont probablement facilement trouvables
+      à partir des autres variables exogènes. On peut donc supposer que les valeurs
+      aberrantes ne sont pas MCAR.
+- exercise_id: b69617a7-86a6-4495-8be8-a43132c1c7d4
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En utilisant la méthode baseline, on élimine complètement la variable
+      du modèle. Puisque le modèle ne possède <strong>qu'une seule</strong> variable
+      exogène, l'enlever mènerait à un modèle uniquement basé sur la moyenne.
+  - answer: false
+    score: 1
+    explanation: Effectivement, en utilisant la méthode baseline, on élimine complètement
+      la variable du modèle. Puisque le modèle ne possède <strong>qu'une seule</strong>
+      variable exogène, l'enlever mènerait à un modèle uniquement basé sur la moyenne.

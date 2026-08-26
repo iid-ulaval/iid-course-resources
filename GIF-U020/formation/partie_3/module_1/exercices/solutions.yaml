@@ -1,0 +1,49 @@
+- exercise_id: 80f47696-242f-465d-9df5-8a26348d005f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, lors de la rétropropagation du gradient, on calcule la dérivée
+      des poids à optimiser par rapport à la perte calculée. Dans le cas du gradient
+      sur l’entrée, on doit calculer la dérivée des valeurs d’entrée par rapport à
+      la valeur obtenue d’une classe d’intérêt. On ne peut donc pas se servir simplement
+      des valeurs obtenues lors de la rétropropagation du gradient.
+  - answer: false
+    score: 1
+    explanation: En effet, lors de la rétropropagation du gradient, on calcule la
+      dérivée des poids à optimiser par rapport à la perte calculée. Dans le cas du
+      gradient sur l’entrée, on doit calculer la dérivée des valeurs d’entrée par
+      rapport à la valeur obtenue d’une classe d’intérêt. On ne peut donc pas se servir
+      simplement des valeurs obtenues lors de la rétropropagation du gradient.
+- exercise_id: 11bb4d42-b720-431b-9f7c-e30ee2d3d00a
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, après la couche GAP, chaque carte d'attributs possédant
+      l'aspect spatial d'une image (deux dimensions) est condensée en un seul attribut.
+      L'information spatiale est donc perdue. Il est impossible de recréer une carte
+      d'attribution à partir des valeurs suivant la couche GAP. C'est pourquoi elle
+      n'est pas utilisée dans cette méthode.
+  - answer: false
+    score: 0
+    explanation: En fait, après la couche GAP, chaque carte d'attributs possédant
+      l'aspect spatial d'une image (deux dimensions) est condensée en un seul attribut.
+      L'information spatiale est donc perdue. Il est impossible de recréer une carte
+      d'attribution à partir des valeurs suivant la couche GAP. C'est pourquoi elle
+      n'est pas utilisée dans cette méthode.
+- exercise_id: abe1f1ff-7a27-4287-811e-b57f43a23305
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, les méthodes classiques possèdent généralement beaucoup
+      moins de paramètres et leur interprétation est souvent très simple. Pour ces
+      raisons, plusieurs domaines qui requièrent des prédictions interprétables vont
+      préférer utiliser des méthodes classiques malgré leurs performances plus faibles.
+  - answer: false
+    score: 1
+    explanation: En effet, les méthodes classiques possèdent généralement beaucoup
+      moins de paramètres et leur interprétation est souvent très simple. Pour ces
+      raisons, plusieurs domaines qui requièrent des prédictions interprétables vont
+      préférer utiliser des méthodes classiques malgré leurs performances plus faibles.

@@ -1,0 +1,30 @@
+- exercise_id: c1945c6a-f686-4990-a0a3-2d54bda72958
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Si on reprend l'exemple avec la génération d'un chiffre, imaginons
+      que le modèle génère un 5 presque parfait, alors qu'il était supposé générer
+      un 7. Le discriminateur va recevoir la vraie image du 7 et l'image générée du
+      5. S'il n'a pas de condition, ou de contrainte, lui indiquant que l'image générée
+      devait être 7, il sera quasiment impossible de distinguer les images.
+  - answer: false
+    score: 0
+    explanation: En fait, si on reprend l'exemple avec la génération d'un chiffre,
+      imaginons que le modèle génère un 5 presque parfait, alors qu'il était supposé
+      générer un 7. Le discriminateur va recevoir la vraie image du 7 et l'image générée
+      du 5. S'il n'a pas de condition, ou de contrainte, lui indiquant que l'image
+      générée devait être 7, il sera quasiment impossible de distinguer les images.
+- exercise_id: f8b434a1-78bd-46a7-8969-472846a894a0
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, un GAN conditionnel utilise l'étiquette de donnée pour ajouter
+      de l'information au modèle et améliorer la génération. Comme le jeu de données
+      ne possède pas d'étiquettes, on ne peut pas utiliser cette méthode.
+  - answer: false
+    score: 1
+    explanation: En effet, un GAN conditionnel utilise l'étiquette de donnée pour
+      ajouter de l'information au modèle et améliorer la génération. Comme le jeu
+      de données ne possède pas d'étiquettes, on ne peut pas utiliser cette méthode.

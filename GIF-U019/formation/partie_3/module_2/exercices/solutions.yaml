@@ -1,0 +1,152 @@
+- exercise_id: 0904cb6c-8abd-404e-abec-612b5f9019a1
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Les différentes stratégies de régularisation servent à améliorer
+      les capacités de généralisation d’un réseau de neurones sur des **données jamais
+      vues durant l'entraînement**.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les différentes stratégies de régularisation servent
+      à améliorer les capacités de généralisation d’un réseau de neurones sur des
+      **données jamais vues durant l'entraînement**.
+- exercise_id: f6f30fdc-8304-41e1-84b1-0e89c1f3610c
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, puisque certains poids ont été mis à 0, même s'il
+      n'était pas exactement à 0 (comme une régularisation L2 l’aurait montré), il
+      ne sera pas possible de réentrainer ces valeurs puisque leurs poids sont nuls.
+      Il faudrait repartir l'entraînement complet du modèle depuis le début.
+  - answer: false
+    score: 0
+    explanation: Puisque certains poids ont été mis à 0, même s'il n'était pas exactement
+      à 0 (comme une régularisation L2 l’aurait montré), il ne sera pas possible de
+      réentrainer ces valeurs puisque leurs poids sont nuls. Il faudrait repartir
+      l'entraînement complet du modèle depuis le début.
+- exercise_id: 56eca5e5-6fbf-4d48-8157-672606f8c59e
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'abandon fonctionne de manière similaire aux méthodes d'ensemble,
+      mais un seul réseau est entraîné.
+  - answer: false
+    score: 1
+    explanation: Effectivement, l'abandon fonctionne de manière similaire aux méthodes
+      d'ensemble, mais un seul réseau est entraîné.
+- exercise_id: 5bc276bb-0d11-4969-a442-420aaebd4545
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les réseaux de neurones ont tendance à surutiliser
+      certains de leurs neurones. Donc, en utilisant de l'abandon, nous les empêchons
+      de se fier uniquement à un sous-ensemble de neurones privilégiés.
+  - answer: false
+    score: 0
+    explanation: Les réseaux de neurones ont tendance à surutiliser certains de leurs
+      neurones. Donc, en utilisant de l'abandon, nous les empêchons de se fier uniquement
+      à un sous-ensemble de neurones privilégiés.
+- exercise_id: 818df2db-bb96-481e-9809-cd2dffac4e04
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, en retirant trop de neurones, le réseau va avoir de
+      la difficulté à apprendre puisque trop souvent ses neurones seront retirés et
+      leurs poids non ajustés. Il y a aussi le fait qu'on essaie maintenant d'entraîner
+      un réseau trop petit (p. ex. avec 100 fois moins de poids) pour reproduire la
+      variabilité des données d'entraînement. Il est donc important d'utiliser des
+      valeurs, ni trop faibles, ni trop élevées.
+  - answer: false
+    score: 0
+    explanation: En retirant trop de neurones, le réseau va avoir de la difficulté
+      à apprendre puisque trop souvent ses neurones seront retirés et leurs poids
+      non ajustés. Il y a aussi le fait qu'on essaie maintenant d'entraîner un réseau
+      trop petit (p. ex. avec 100 fois moins de poids) pour reproduire la variabilité
+      des données d'entraînement. Il est donc important d'utiliser des valeurs, ni
+      trop faibles, ni trop élevées.
+- exercise_id: c40cdd3e-8bc1-47de-b9b2-fd01b86800eb
+  reference_solution: '{1}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 1
+    explanation: Vrai, en arrêtant trop tôt l'entraînement, nous pourrions nous retrouver
+      avec un modèle n'ayant pas encore atteint ses performances optimales.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, une patience trop élevée peut causer du surapprentissage et
+      peut nous obliger à calculer un nombre d'époques plus important que nécessaire
+      (temps et coûts inutiles).
+- exercise_id: 99e31975-7b7c-4239-88c0-4a3c48c1e3e8
+  reference_solution: '{1, 2, 3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0.33
+    explanation: Oui, l'augmentation de données permet d'ajouter de la variance dans
+      les données d'entraînement et de réduire la mémorisation des exemples.
+  - answer: !!set
+      2: null
+    score: 0.33
+    explanation: Oui, l'ajout de bruit dans les données d'entraînement permet de réduire
+      le surapprentissage, mais peut aussi réduire la performance du modèle final
+      si le bruit est trop important.
+  - answer: !!set
+      3: null
+    score: 0.33
+    explanation: Oui et non. Oui L'entraînement de plusieurs réseaux de neurones avec
+      des données différentes et des poids initiaux différents permet de réduire le
+      surapprentissage. Mais non, car la durée d'entraînement est souvent beaucoup
+      plus longue en apprentissage profond par rapport à l'apprentissage automatique
+      classique ce qui rend la procédure moins attrayante et plus couteuse.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Non, l'ajout de couches complexifie le réseau et augmente la possibilité
+      que le réseau mémorise dans ses poids des exemples. Il faut plutôt faire l'inverse,
+      simplifier le réseau.
+  - answer: !!set
+      5: null
+    score: 0
+    explanation: Non, il faut plutôt faire l'inverse. Voir plus souvent les exemples
+      ne permettra pas au réseau de réduire son surapprentissage, mais plutôt l'inverse.
+  - answer: !!set
+      1: null
+      2: null
+    score: 0.66
+    explanation: Oui, l'augmentation de données permet d'ajouter de la variance dans
+      les données d'entraînement et de réduire la mémorisation des exemples. Oui,
+      l'ajout de bruit dans les données d'entraînement permet de réduire le surapprentissage,
+      mais peut aussi réduire la performance du modèle final. Mais la réponse est
+      incomplète.
+  - answer: !!set
+      1: null
+      3: null
+    score: 0.66
+    explanation: Oui, l'augmentation de données permet d'ajouter de la variance dans
+      les données d'entraînement et de réduire la mémorisation des exemples. Oui L'entraînement
+      de plusieurs réseaux de neurones avec des données différentes et des poids initiaux
+      différents permet de réduire le surapprentissage. Mais non, car la durée d'entraînement
+      est souvent beaucoup plus longue en apprentissage profond par rapport à l'apprentissage
+      automatique classique ce qui rend la procédure moins attrayante et plus couteuse.
+      Toutefois, la réponse est incomplète.
+  - answer: !!set
+      1: null
+      2: null
+      3: null
+    score: 1
+    explanation: Oui, l'augmentation de données permet d'ajouter de la variance dans
+      les données d'entraînement et de réduire la mémorisation des exemples. Oui,
+      l'ajout de bruit dans les données d'entraînement permet de réduire le surapprentissage,
+      mais peut aussi réduire la performance du modèle final. Mais la réponse est
+      incomplète. Oui L'entraînement de plusieurs réseaux de neurones avec des données
+      différentes et des poids initiaux différents permet de réduire le surapprentissage.
+      Mais non, car la durée d'entraînement est souvent beaucoup plus longue en apprentissage
+      profond par rapport à l'apprentissage automatique classique ce qui rend la procédure
+      moins attrayante et plus couteuse.

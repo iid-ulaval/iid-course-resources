@@ -1,0 +1,18 @@
+- exercise_id: 6837f639-967f-4d2d-a701-d1577dfc01ad
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Elle ne crée pas des mots existant dans une langue.
+  - answer: false
+    score: 1
+    explanation: Effectivement, elle ne crée pas de mots existant dans une langue.
+- exercise_id: 59a94823-a88d-431e-b83d-929cda036ee1
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il s'agit de la définition de la lemmatisation.
+  - answer: false
+    score: 0
+    explanation: Il s'agit de la définition de la lemmatisation.

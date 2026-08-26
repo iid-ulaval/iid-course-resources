@@ -1,0 +1,8 @@
+IPython
+matplotlib
+numpy
+paxutils
+poutyne
+torch
+torchvision
+tqdm

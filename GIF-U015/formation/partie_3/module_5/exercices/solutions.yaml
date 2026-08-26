@@ -1,0 +1,26 @@
+- exercise_id: ca2c7992-93e7-4033-bf08-b07173788cf5
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Il n'est pas recommandé d'utiliser ce type d'approche, car cela implique
+      de la maintenance plus complexe et de la configuration des expérimentations
+      plus ardues. Il est recommandé d'utiliser des outils de gestion des configurations
+      tels qu'Hydra.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il n'est pas recommandé d'utiliser ce type d'approche,
+      car cela implique de la maintenance plus complexe et de la configuration des
+      expérimentations plus ardues. Il est recommandé d'utiliser des outils de gestion
+      des configurations tels qu'Hydra.
+- exercise_id: 89562091-e3c4-4a68-ab0f-565a0d900076
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'aspect hiérarchique des configurations avec Hydra
+      facilite leur maintenance et simplifie donc le processus.
+  - answer: false
+    score: 0
+    explanation: L'aspect hiérarchique des configurations avec Hydra facilite leur
+      maintenance et simplifie donc le processus.

@@ -1,0 +1,11 @@
+cv2
+matplotlib
+numpy
+paxutils
+poutyne
+selectivesearch
+skimage
+torch
+torch_snippets
+torchvision
+tqdm

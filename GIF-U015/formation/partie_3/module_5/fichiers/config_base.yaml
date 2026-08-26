@@ -1,0 +1,9 @@
+reseau:
+  nombre_de_couches: 4
+  nombre_de_neurones_par_couche: [3, 4, 4, 2]
+  fonction_d_activation: ReLU
+
+optimisation:
+  taux_d_apprentissage: 0.1
+  algorithme_d_apprentissage: SGD
+  fonction_de_perte: BCELoss

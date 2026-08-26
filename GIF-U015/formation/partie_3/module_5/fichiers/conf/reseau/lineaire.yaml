@@ -1,0 +1,2 @@
+nombre_de_couches: 2
+nombre_de_neurones_par_couche: [3, 2]

@@ -1,0 +1,36 @@
+- exercise_id: 0e027d8c-cf30-4144-83d5-3b534ffd6b34
+  reference_solution: '{4}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Comme nous l'avons vu, les cartes d'attributs des réseaux pré-entrainés
+      préexistants ont de très fortes capacités de transfert d'apprentissage qui nécessitent
+      peu d'ajustements sur de nouvelles données. Il n'est donc pas recommandé de
+      créer sa propre architecture dès le départ.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Il n'est pas judicieux de recoder les architectures déjà implémentées
+      dans les librairies d'entraînement de réseaux d'apprentissage profond comme
+      PyTorch, surtout comme point de départ.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Comme nous l'avons vu, les cartes d'attributs des réseaux préentrainés
+      préexistants ont de très fortes capacités de transfert d'apprentissage qui nécessitent
+      peu d'ajustements sur de nouvelles données. Il n'est donc pas nécessaire de
+      changer les poids de l'ensemble du réseau.
+  - answer: !!set
+      4: null
+    score: 1
+    explanation: Comme nous l'avons vu, les cartes d'attributs des réseaux préentrainés
+      préexistants ont de très fortes capacités de transfert d'apprentissage qui nécessitent
+      peu d'ajustements sur de nouvelles données. Il est donc plus pertinent de débuter
+      avec cette approche lorsque l'on tente de faire de la reconnaissance d'image
+      à partir de réseaux de neurones profonds.
+- exercise_id: 04ce9c99-3138-401a-9d28-2cd5c6d6d9bb
+  reference_solution: 'reseau = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+
+    reseau.fc = nn.Linear(reseau.fc.in_features, 2)'
+  feedback_list: null

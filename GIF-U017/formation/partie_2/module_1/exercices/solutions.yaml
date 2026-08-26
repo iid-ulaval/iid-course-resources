@@ -1,0 +1,74 @@
+- exercise_id: 5e73b0b9-683c-407c-9869-105d08c7aaeb
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Il ne faut jamais entraîner des transformations sur des données autres
+      que celles du jeu d’entraînement. Si l’on utilisait également les jeux de validation
+      et de test à cette fin, il en résulterait une surestimation des performances
+      de nos modèles, lorsque testés sur ces jeux. De plus, ça diminuerait la capacité
+      de généralisation de nos modèles puisqu’ils n’auraient jamais été entraînés
+      à traiter des données jamais vues pendant l’entraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il ne faut jamais entraîner des transformations sur
+      des données autres que celles du jeu d’entraînement. Si l’on utilisait également
+      les jeux de validation et de test à cette fin, il en résulterait une surestimation
+      des performances de nos modèles, lorsque testés sur ces jeux. De plus, ça diminuerait
+      la capacité de généralisation de nos modèles puisqu’ils n’auraient jamais été
+      entraînés à traiter des données jamais vues pendant l’entraînement.
+- exercise_id: 43073858-1471-44e2-b046-b935ee755780
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les mots en dehors du vocabulaire (*out-of-vocabulary*)
+      ne peuvent pas être supportés par les sacs de mots puisque le vecteur du vocabulaire
+      est défini durant l'entraînement. Des techniques ont été proposées pour réduire
+      l'impact de cette situation et seront notamment vues dans le module sur les
+      représentations par N-grammes.
+  - answer: false
+    score: 0
+    explanation: Les mots en dehors du vocabulaire (*out-of-vocabulary*) ne peuvent
+      pas être supportés par les sacs de mots puisque le vecteur du vocabulaire est
+      défini durant l'entraînement. Des techniques ont été proposées pour réduire
+      l'impact de cette situation et seront notamment vues dans le module sur les
+      représentations par N-grammes.
+- exercise_id: b58126f0-0d47-4659-842a-b3e4c218c92c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Lors de l'analyse des résultats du modèle bayésien présenté dans
+      le module, un déséquilibre apparent a été observé entre les classes du jeu de
+      données et ce déséquilibre s'est reflété dans les probabilités à priori du modèle.
+  - answer: false
+    score: 1
+    explanation: Effectivement, lors de l'analyse des résultats du modèle bayésien
+      présenté dans le module, un déséquilibre apparent a été observé entre les classes
+      du jeu de données et ce déséquilibre s'est reflété dans les probabilités à priori
+      du modèle.
+- exercise_id: 3fbbb8a4-4323-4a65-8628-4862d96af2cc
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'approche est dite naïve, car nous savons que ses
+      hypothèses sont naïves et ne représentent pas la réalité.
+  - answer: false
+    score: 0
+    explanation: L'approche est dite naïve, car nous savons que ses hypothèses sont
+      naïves et ne représentent pas la réalité.
+- exercise_id: 41c00910-03f6-4295-9aec-2f5b14de13cb
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, comme nous avons vu pour les classes « *jackets* »
+      et « *intimate* », ces classes sont peu représentées dans l'ensemble d'apprentissages
+      et notre modèle se trompe très souvent pour celles-ci.
+  - answer: false
+    score: 0
+    explanation: Comme nous avons vu pour les classes « *jackets* » et « *intimate*
+      », ces classes sont peu représentées dans l'ensemble d'apprentissages et notre
+      modèle se trompe très souvent pour celles-ci.

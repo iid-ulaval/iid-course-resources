@@ -1,0 +1,54 @@
+- exercise_id: 071a7d96-16a4-479c-808b-7b3b44665f84
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, contrairement à un RNN, le traitement d'un transformeur est
+      non séquentiel. Le traitement peut être appliqué simultanément à tous les éléments
+      de la séquence.
+  - answer: false
+    score: 1
+    explanation: Exactement, contrairement à un RNN, le traitement d'un transformeur
+      est non séquentiel. Le traitement peut être appliqué simultanément à tous les
+      éléments de la séquence.
+- exercise_id: edd103c8-985f-4871-9bf7-4e54070c3f7f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, les blocs résiduels sont utilisés dans une variété d'architectures
+      qui prédatent les transformeurs.
+  - answer: false
+    score: 1
+    explanation: Exactement, la principale innovation du Transformeur est le bloc
+      d'auto-attention.
+- exercise_id: b1506d59-4c2a-45ba-909d-27455e18befa
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, l'attention régulière est aussi calculée automatiquement en
+      fonction des vecteurs contextuels produits par le réseau.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, l'attention peut être appliquée sur un texte automobile de
+      la même façon que sur n'importe quel autre texte.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Vrai.
+- exercise_id: 9f32bceb-dec4-47ec-95fe-32b43b9d90cc
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Exactement. Chaque élément fournit une requête $Q$ distincte qui
+      est utilisée pour produire une attention sur la séquence et déterminer la nouvelle
+      valeur de l'élément à la sortie de la couche d'auto-attention.
+  - answer: false
+    score: 0
+    explanation: Désolé. Chaque élément fournit une requête $Q$ distincte qui est
+      utilisée pour produire une attention sur la séquence et déterminer la nouvelle
+      valeur de l'élément à la sortie de la couche d'auto-attention.

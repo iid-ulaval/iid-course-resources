@@ -1,0 +1,9 @@
+- exercise_id: d1ae7933-185a-44d1-8a53-33a8dddda31f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, on utilise plutôt un algorithme comme BPE ou WordPiece.
+  - answer: false
+    score: 1
+    explanation: Exactement, on utilise plutôt un algorithme comme BPE ou WordPiece.

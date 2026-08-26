@@ -1,0 +1,6 @@
+matplotlib
+numpy
+paxutils
+poutyne
+torch
+torchvision

@@ -1,0 +1,41 @@
+- exercise_id: ae899e1b-4187-40b4-a877-e6ae080cb3d2
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: L'erreur quadratique moyenne fait la moyenne des résidus élevés au
+      carré, soit la variance des erreurs. Ça n'a rien à voir avec l'erreur moyenne
+      des erreurs.
+  - answer: false
+    score: 1
+    explanation: Effectivement, l'erreur quadratique moyenne fait la moyenne des résidus
+      élevés au carré, soit la variance des erreurs. Ça n'a rien à voir avec l'erreur
+      moyenne des erreurs.
+- exercise_id: 11a58b04-07c3-4c63-9480-9d36fe4691f8
+  reference_solution: '1'
+  feedback_list:
+  - answer: 1
+    score: 1
+    explanation: En effet, un $R^2$ de 1 signifie que le modèle explique toute la
+      variance de la variable d'intérêt. À l'opposé une valeur de 0 signifie que le
+      modèle n'explique rien de la valeur de la variable d'intérêt. Une valeur de
+      0,9 explique une grande partie de la variance, mais une petite partie reste
+      inexpliquée.
+  - answer: 2
+    score: 0
+    explanation: Un $R^2$ de 1 signifie que le modèle explique toute la variance de
+      la variable d'intérêt. À l'opposé une valeur de 0 signifie que le modèle n'explique
+      rien de la valeur de la variable d'intérêt. Une valeur de 0,9 explique une grande
+      partie de la variance, mais une petite partie reste inexpliquée.
+  - answer: 3
+    score: 0
+    explanation: Un $R^2$ de 1 signifie que le modèle explique toute la variance de
+      la variable d'intérêt. À l'opposé une valeur de 0 signifie que le modèle n'explique
+      rien de la valeur de la variable d'intérêt. Une valeur de 0,9 explique une grande
+      partie de la variance, mais une petite partie reste inexpliquée.
+  - answer: 4
+    score: 0
+    explanation: Un $R^2$ de 1 signifie que le modèle explique toute la variance de
+      la variable d'intérêt. À l'opposé une valeur de 0 signifie que le modèle n'explique
+      rien de la valeur de la variable d'intérêt. Une valeur de 0,9 explique une grande
+      partie de la variance, mais une petite partie reste inexpliquée.

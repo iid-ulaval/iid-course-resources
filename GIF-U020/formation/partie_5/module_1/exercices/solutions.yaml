@@ -1,0 +1,43 @@
+- exercise_id: a431367b-a6d7-43ee-b8ca-8691aa87e39a
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, contrairement à une majorité de modèles, les GANs sont composés
+      de deux parties ayant des objectifs opposés. L’une vise à minimiser sa perte
+      alors que l'autre vise à maximiser la sienne. On ne peut donc pas réécrire la
+      fonction de perte sous la forme générale ci-dessus.
+  - answer: false
+    score: 1
+    explanation: En effet, contrairement à une majorité de modèles, les GANs sont
+      composés de deux parties ayant des objectifs opposés. L’une vise à minimiser
+      sa perte alors que l'autre vise à maximiser la sienne. On ne peut donc pas réécrire
+      la fonction de perte sous la forme générale ci-dessus.
+- exercise_id: 10b82ad5-c4d9-4900-82e6-776a33724925
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, si on utilise cette technique, nous aurons un GAN qui ne
+      fonctionnera pas. Les gains des deux optimisations consécutives vont s'annuler
+      entre eux. On doit optimiser les poids du générateur pour minimiser la perte
+      et optimiser les poids du discriminateur pour maximiser la perte.
+  - answer: false
+    score: 1
+    explanation: En effet, si on utilise cette technique, nous aurons un GAN qui ne
+      fonctionnera pas. Les gains des deux optimisations consécutives vont s'annuler
+      entre eux. On doit optimiser les poids du générateur pour minimiser la perte
+      et optimiser les poids du discriminateur pour maximiser la perte.
+- exercise_id: c8661f38-5ceb-4c89-b059-0313235c9bf8
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, la nature stochastique provient seulement du vecteur $z$.
+      Si on propage deux fois la même valeur de $z$ dans le générateur, il produira
+      la même reconstruction.
+  - answer: false
+    score: 0
+    explanation: En fait, la nature stochastique provient seulement du vecteur $z$.
+      Si on propage deux fois la même valeur de $z$ dans le générateur, il produira
+      la même reconstruction.

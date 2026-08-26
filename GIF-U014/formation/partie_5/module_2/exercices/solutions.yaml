@@ -1,0 +1,32 @@
+- exercise_id: f9171a58-abae-4f4a-9f7e-7f8f3b96350c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: On effectue dix entraînements. Par contre, on n'échantillonne pas
+      à chacun d'eux. On effectue un seul échantillonnage au début de la méthode dans
+      lequel les données sont divisées également entre les dix plis. Chacun des plis
+      sera exclu de l'entraînement une fois et servira d'ensemble de validation pour
+      cet entraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, on effectue un seul échantillonnage au début de la
+      méthode dans lequel les données sont divisées également entre les dix plis.
+      Chacun des plis sera exclu de l'entraînement une fois et servira d'ensemble
+      de validation pour cet entraînement.
+- exercise_id: 1c138397-a3e1-4c0e-b9e3-a10439546641
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les modèles seront entraînés avec un plus grand nombre
+      de données et plus de fois. Par contre la MSE risque d'être plus variable étant
+      donné le plus petit nombre de données dans l'ensemble de validation. Augmenter
+      le nombre de plis sera aussi plus coûteux puisque plus de modèles devront être
+      entraînés.
+  - answer: false
+    score: 0
+    explanation: Les modèles seront entraînés avec un plus grand nombre de données
+      et plus de fois. Par contre la MSE risque d'être plus variable étant donné le
+      plus petit nombre de données dans l'ensemble de validation. Augmenter le nombre
+      de plis sera aussi plus coûteux puisque plus de modèles devront être entraînés.

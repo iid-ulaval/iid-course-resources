@@ -1,0 +1,46 @@
+- exercise_id: a92e75e5-8da8-44a3-8208-d3d2e4e2ff25
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: On ne doit pas utiliser les mêmes ensembles de données pour l'entraînement,
+      car les arbres construits auraient alors les mêmes règles de décision, et il
+      n'y aurait aucun avantage à créer plusieurs arbres.
+  - answer: false
+    score: 1
+    explanation: Effectivement, on ne doit pas utiliser les mêmes ensembles de données
+      pour l'entraînement, car les arbres construits auraient alors les mêmes règles
+      de décision, et il n'y aurait aucun avantage à créer plusieurs arbres.
+- exercise_id: 134245be-ba07-4903-981f-b5076ea6ba78
+  reference_solution: '4'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Le gain d'information est l'entropie de l'arbre à la hauteur du noeud
+      auquel on soustrait l'entropie de l'arbre à la hauteur des feuilles qui sont
+      créées par la séparation. Dans ce cas, les deux séparations seront positives,
+      mais la deuxième sera plus grande.
+  - answer: 2
+    score: 0
+    explanation: Le gain d'information est l'entropie de l'arbre à la hauteur du noeud
+      auquel on soustrait l'entropie de l'arbre à la hauteur des feuilles qui sont
+      créées par la séparation. Dans ce cas, les deux séparations seront positives,
+      mais la deuxième sera plus grande.
+  - answer: 3
+    score: 0
+    explanation: Le gain d'information est l'entropie de l'arbre à la hauteur du noeud
+      auquel on soustrait l'entropie de l'arbre à la hauteur des feuilles qui sont
+      créées par la séparation. Dans ce cas, les deux séparations seront positives,
+      mais la deuxième sera plus grande.
+  - answer: 4
+    score: 1
+    explanation: En effet, on essaye de maximiser le gain d'information. Le gain d'information
+      est l'entropie de l'arbre à la hauteur du noeud auquel on soustrait l'entropie
+      de l'arbre à la hauteur des feuilles qui sont créées par la séparation. Dans
+      ce cas, les deux séparations seront positives, mais la deuxième sera plus grande.
+  - answer: 5
+    score: 0
+    explanation: Le gain d'information est l'entropie de l'arbre à la hauteur du noeud
+      auquel on soustrait l'entropie de l'arbre à la hauteur des feuilles qui sont
+      créées par la séparation. Dans ce cas, les deux séparations seront positives,
+      mais la deuxième sera plus grande.

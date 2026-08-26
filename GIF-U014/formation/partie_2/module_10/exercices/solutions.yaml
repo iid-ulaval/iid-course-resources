@@ -1,0 +1,25 @@
+- exercise_id: 0d31b0ea-0305-4fbc-97a1-2897dd9e688f
+  reference_solution: '2'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Car, le coefficient de corrélation est près de zéro.
+  - answer: 2
+    score: 1
+    explanation: En effet, la corrélation est élevée et les deux variables semblent
+      logiquement plus causales que celles de l'option 3.
+  - answer: 3
+    score: 0
+    explanation: Car, malgré la corrélation plus élevée que l'option 3, la causalité
+      logique des variables est peu vraisemblable.
+- exercise_id: c7e37847-5ca2-46bf-b1bd-47dcdfe4e773
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: S’il y a de la causalité entre deux variables, une variable cause
+      un effet à l'autre variable. Il y a donc forcément corrélation.
+  - answer: false
+    score: 0
+    explanation: Effectivement, s’il y a de la causalité entre deux variables, une
+      variable cause un effet à l'autre variable. Il y a donc forcément corrélation.

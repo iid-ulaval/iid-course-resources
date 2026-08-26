@@ -1,0 +1,14 @@
+- exercise_id: 0698c797-12d8-4943-8274-5b73342a7286
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'utilisation d'une librairie telle que Poutyne vise
+      à faciliter le prototypage rapide d'expériences en mettant l'accent sur notre
+      expérience plutôt que sur des éléments sans valeur comme la réécriture de la
+      boucle d'entraînement.
+  - answer: false
+    score: 0
+    explanation: L'utilisation d'une librairie telle que Poutyne vise à faciliter
+      le prototypage rapide d'expériences en mettant l'accent sur notre expérience
+      plutôt que sur des éléments sans valeur comme la réécriture de la boucle d'entraînement.

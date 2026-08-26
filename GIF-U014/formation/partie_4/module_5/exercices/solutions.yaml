@@ -1,0 +1,28 @@
+- exercise_id: cf897b84-1483-42fa-83ca-eed29525526f
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, le $\sim$ montre que les variables sont normalisées. Lorsque
+      les variables sont normalisées, on peut comparer leur impact.
+  - answer: false
+    score: 0
+    explanation: Car, le $\sim$ montre que les variables sont normalisées. Lorsque
+      les variables sont normalisées, on peut comparer leur impact.
+- exercise_id: 728c6ec7-1913-43ae-9e0c-c82d7290a919
+  reference_solution: '3'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: On utilise souvent ce genre de normalisation pour des variables qui
+      ont les mêmes unités. Pour ce cas, la normalisation vectorielle permettrait
+      de bien illustrer la proportion des mesures les unes par rapport aux autres.
+  - answer: 2
+    score: 0
+    explanation: On utilise souvent ce genre de normalisation pour des variables qui
+      ont les mêmes unités. Pour ce cas, la normalisation vectorielle permettrait
+      de bien illustrer la proportion des mesures les unes par rapport aux autres.
+  - answer: 3
+    score: 1
+    explanation: En effet, la normalisation vectorielle permet de bien illustrer la
+      proportion des mesures les unes par rapport aux autres.

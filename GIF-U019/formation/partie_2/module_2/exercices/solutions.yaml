@@ -1,0 +1,70 @@
+- exercise_id: c8b5bfc9-5f65-48eb-b29c-f559dc0b9573
+  reference_solution: "class AlexNetModifiedSansReLU(nn.Module):\n    def __init__(self,\
+    \ num_classes: int = 1000) -> None:\n        super().__init__()\n        self.features\
+    \ = nn.Sequential(\n            nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=0),\n\
+    \            nn.Conv2d(64, 64, kernel_size=3, stride=2, padding=0),\n        \
+    \    nn.Conv2d(64, 64, kernel_size=3, stride=2, padding=1),\n            nn.ReLU(inplace=True),\n\
+    \            nn.MaxPool2d(kernel_size=3, stride=2),\n            nn.Conv2d(64,\
+    \ 192, kernel_size=3, padding=1),\n            nn.Conv2d(192, 192, kernel_size=3,\
+    \ padding=1),\n            nn.ReLU(inplace=True),\n            nn.MaxPool2d(kernel_size=3,\
+    \ stride=2),\n            nn.Conv2d(192, 384, kernel_size=3, padding=1),\n   \
+    \         nn.ReLU(inplace=True),\n            nn.Conv2d(384, 256, kernel_size=3,\
+    \ padding=1),\n            nn.ReLU(inplace=True),\n            nn.Conv2d(256,\
+    \ 256, kernel_size=3, padding=1),\n            nn.ReLU(inplace=True),\n      \
+    \      nn.MaxPool2d(kernel_size=3, stride=2),\n        )\n        self.avgpool\
+    \ = nn.AdaptiveAvgPool2d((6, 6))\n        self.classifier = nn.Sequential(\n \
+    \           nn.Dropout(),\n            nn.Linear(256 * 6 * 6, 4096),\n       \
+    \     nn.ReLU(inplace=True),\n            nn.Dropout(),\n            nn.Linear(4096,\
+    \ 4096),\n            nn.ReLU(inplace=True),\n            nn.Linear(4096, num_classes),\n\
+    \        )\n\n    def forward(self, x: torch.Tensor) -> torch.Tensor:\n      \
+    \  x = self.features(x)\n        x = self.avgpool(x)\n        x = torch.flatten(x,\
+    \ 1)\n        x = self.classifier(x)\n        return x"
+  feedback_list: null
+- exercise_id: 6334945f-f1ce-4633-b231-8885c0fedf4c
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, la différence de performance provient du fait que
+      les fonctions *ReLU* entre l'empilement des couches permet d'établir des liens
+      non linéaires entre les pixels du champ réceptif d'une carte d'attributs. Les
+      relations non linéaires permettront au réseau de trouver des représentations
+      plus complexes.
+  - answer: false
+    score: 0
+    explanation: La différence de performance provient du fait que les fonctions *ReLU*
+      entre l'empilement des couches permet d'établir des liens non linéaires entre
+      les pixels du champ réceptif d'une carte d'attributs. Les relations non linéaires
+      permettront au réseau de trouver des représentations plus complexes.
+- exercise_id: 129a6754-01ab-48ee-82ba-ae7240de947b
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, lorsqu'on empile des couches à convolution sans mettre
+      de fonction *ReLU*, les pixels du champ réceptif d'un *feature* auront une relation
+      linéaire avec celui-ci. `AlexNet` et `AlexNetModifiedSansReLU` vont donc apprendre
+      des relations linéaires sur des champs réceptifs de même taille.
+  - answer: false
+    score: 0
+    explanation: Lorsqu'on empile des couches à convolution sans mettre de fonction
+      *ReLU*, les pixels du champ réceptif d'un *feature* auront une relation linéaire
+      avec celui-ci. `AlexNet` et `AlexNetModifiedSansReLU` vont donc apprendre des
+      relations linéaires sur des champs réceptifs de même taille.
+- exercise_id: 214fd6db-9dcf-4bcc-aff6-a613eb6cfa91
+  reference_solution: "class InceptionBlock(nn.Module):\n    def __init__(\n     \
+    \   self, in_features, ch1x1, ch3x3orange, ch3x3, ch5x5jaune, ch5x5, pool_proj\n\
+    \    ):\n        super().__init__()\n\n        self.conv1x1 = nn.Conv2d(in_features,\
+    \ ch1x1, 1)\n\n        self.conv1x1_conv3x3 = nn.Sequential(\n            nn.Conv2d(in_features,\
+    \ ch3x3orange, 1),\n            nn.Conv2d(ch3x3orange, ch3x3, 3, padding=1),\n\
+    \        )  # TODO\n\n        self.conv1x1_conv5x5 = nn.Sequential(\n        \
+    \    nn.Conv2d(in_features, ch5x5jaune, 1),\n            nn.Conv2d(ch5x5jaune,\
+    \ ch5x5, 5, padding=2),\n        )  # TODO\n\n        self.maxPool3x3stride1_conv1x1\
+    \ = nn.Sequential(\n            nn.MaxPool2d(3, stride=1, padding=1), nn.Conv2d(in_features,\
+    \ pool_proj, 1)\n        )  # TODO\n\n    def forward(self, x):\n        sortie1\
+    \ = self.conv1x1(x)\n        sortie2 = self.conv1x1_conv3x3(x)\n        sortie3\
+    \ = self.conv1x1_conv5x5(x)\n        sortie4 = self.maxPool3x3stride1_conv1x1(x)\n\
+    \        out = torch.cat((sortie1, sortie2, sortie3, sortie4), dim=1)\n      \
+    \  return out\n\n\nnet = InceptionBlock(3, 5, 2, 5, 2, 5, 5)\nimage_aleatoire\
+    \ = torch.rand(1, 3, 224, 224)\nout = net.forward(image_aleatoire)\nout.shape"
+  feedback_list: null

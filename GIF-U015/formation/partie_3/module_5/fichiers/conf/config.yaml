@@ -1,0 +1,3 @@
+defaults:
+  - reseau: lineaire
+  - optimisation: adam

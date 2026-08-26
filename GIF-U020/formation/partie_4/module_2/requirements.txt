@@ -1,0 +1,10 @@
+cv2
+matplotlib
+numpy
+pandas
+paxutils
+poutyne
+scikit-learn
+torch
+torchvision
+tqdm

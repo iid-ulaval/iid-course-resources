@@ -1,0 +1,105 @@
+- exercise_id: 8e9ecb76-74e1-44f7-a1f3-775ae895a349
+  reference_solution: '{4}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, l'objectif des images *Cyclic* et de voir si les générateurs
+      gardent une cohérence lors des changements de domaines. Si les générateurs font
+      seulement changer de distribution sans considérer les caractéristiques d'une
+      image, les images *Cyclic* n'auront aucune cohérence par rapport à leur image
+      initiale.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, l'objectif des images *Cyclic* et de voir si les générateurs
+      gardent une cohérence lors des changements de domaines. Si les générateurs font
+      seulement changer de distribution sans considérer les caractéristiques d'une
+      image, les images *Cyclic* n'auront aucune cohérence par rapport à leur image
+      initiale.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, l'objectif des images *Cyclic* et de voir si les générateurs
+      gardent une cohérence lors des changements de domaines. Si les générateurs font
+      seulement changer de distribution sans considérer les caractéristiques d'une
+      image, les images *Cyclic* n'auront aucune cohérence par rapport à leur image
+      initiale.
+  - answer: !!set
+      4: null
+    score: 1
+    explanation: En effet, l'objectif des images *Cyclic* et de voir si les générateurs
+      gardent une cohérence lors des changements de domaines. Si les générateurs font
+      seulement changer de distribution sans considérer les caractéristiques d'une
+      image, les images *Cyclic* n'auront aucune cohérence par rapport à leur image
+      initiale.
+  - answer: !!set
+      5: null
+    score: 0
+    explanation: Faux, la réponse 4 est la bonne. L'objectif des images *Cyclic* et
+      de voir si les générateurs gardent une cohérence lors des changements de domaines.
+      Si les générateurs font seulement changer de distribution sans considérer les
+      caractéristiques d'une image, les images *Cyclic* n'auront aucune cohérence
+      par rapport à leur image initiale.
+- exercise_id: 2a458ba1-2494-4816-98df-11622ca181e0
+  reference_solution: '{4}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Ce n'est pas la bonne réponse.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Ce n'est pas la bonne réponse.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Ce n'est pas la bonne réponse.
+  - answer: !!set
+      4: null
+    score: 1
+    explanation: Effectivement, il s'agit de la bonne réponse. La perte des discriminateurs
+      est associée à la distinction des images ayant des caractéristiques invraisemblables
+      dans un domaine. La perte d'adversité vise à s'assurer qu'une image, d'abord
+      transformée dans un domaine avec un générateur et retournée dans son domaine
+      initial, garde des caractéristiques similaires. La perte d'identité vise à s'assurer
+      que la transformation de domaine ne change pas une image qui est déjà dans le
+      domaine de transformation. La perte de cohérence de cycle vise à s'assurer qu'une
+      image d'abord transformée dans un domaine avec un générateur et retournée dans
+      son domaine initial garde des caractéristiques similaires.
+- exercise_id: aa555d81-f4d5-49cb-815b-f11a5a02c249
+  reference_solution: '{4}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, c'est la perte de cohérence de cycle qui permet de garder certaines
+      caractéristiques lors des transformations. Sans celle-ci, les générateurs cherchent
+      seulement à tromper le discriminateur (perte d'adversité). Le discriminateur
+      essaie seulement de distinguer les fausses images des vraies sans tenir compte
+      de l'image utilisée pour la transformation.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, c'est la perte de cohérence de cycle qui permet de garder certaines
+      caractéristiques lors des transformations. Sans celle-ci, les générateurs cherchent
+      seulement à tromper le discriminateur (perte d'adversité). Le discriminateur
+      essaie seulement de distinguer les fausses images des vraies sans tenir compte
+      de l'image utilisée pour la transformation.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, c'est la perte de cohérence de cycle qui permet de garder certaines
+      caractéristiques lors des transformations. Sans celle-ci, les générateurs cherchent
+      seulement à tromper le discriminateur (perte d'adversité). Le discriminateur
+      essaie seulement de distinguer les fausses images des vraies sans tenir compte
+      de l'image utilisée pour la transformation.
+  - answer: !!set
+      4: null
+    score: 1
+    explanation: En effet, la perte de cohérence de cycle permet de garder certaines
+      caractéristiques lors des transformations. Sans celle-ci, les générateurs cherchent
+      seulement à tromper le discriminateur (perte d'adversité). Le discriminateur
+      essaie seulement de distinguer les fausses images des vraies sans tenir compte
+      de l'image utilisée pour la transformation.

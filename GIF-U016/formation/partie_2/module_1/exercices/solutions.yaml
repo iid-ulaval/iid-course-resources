@@ -1,0 +1,40 @@
+- exercise_id: f57a0d7b-faad-44cd-9252-a8c84c93e87a
+  reference_solution: "with open(fichier, \"r\") as file:\n    data = file.read()\n\
+    \ndata = data.replace(\"\\n\", \" \").lower().split(\". \")"
+  feedback_list: null
+- exercise_id: a9b3ac5a-f347-43fa-9e87-e95fefca87f3
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, le nettoyage des données est un processus qui sera
+      revisité au fur et à mesure que nous approfondissons notre compréhension du
+      jeu de données.
+  - answer: false
+    score: 0
+    explanation: Le nettoyage des données est un processus qui sera revisité au fur
+      et à mesure que nous approfondissons notre compréhension du jeu de données.
+- exercise_id: 9e38e45c-21da-4d4f-a6d2-f3e764e56d5b
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, la conception d'un pipeline de données a pour objectif
+      de rendre le processus plus déterministe et robuste tout en facilitant son utilisation
+      dans un environnement de production.
+  - answer: false
+    score: 0
+    explanation: La conception d'un pipeline de données a pour objectif de rendre
+      le processus plus déterministe et robuste tout en facilitant son utilisation
+      dans un environnement de production.
+- exercise_id: f8eb3eca-5954-427f-93c1-3446fec5184b
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Certains formats nécessitent plus d'efforts pour extraire le contenu,
+      par exemple avec les fichiers PDF ou XML.
+  - answer: false
+    score: 1
+    explanation: Effectivement, certains formats nécessitent plus d'efforts pour extraire
+      le contenu.

@@ -1,0 +1,51 @@
+- exercise_id: 4033abd2-696b-4a52-adc4-59532253f03c
+  reference_solution: "early_stopping = EarlyStopping(\n    monitor=\"val_loss\",\
+    \ min_delta=0.01, patience=4, verbose=True, mode=\"min\"\n)"
+  feedback_list: null
+- exercise_id: 0f754121-9dbc-4416-9c45-cf6ffdde701f
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, dans le jargon, on peut dire que l'on vient explorer
+      une zone plus petite de l'espace des paramètres puisqu'un taux d'apprentissage
+      plus petit réduit le volume à explorer. Ce petit volume englobe possiblement
+      un minimum local, ce qui permet d'obtenir une légère amélioration des performances.
+  - answer: false
+    score: 0
+    explanation: Dans le jargon, on peut dire que l'on vient explorer une zone plus
+      petite de l'espace des paramètres puisqu'un taux d'apprentissage plus petit
+      réduit le volume à explorer. Ce petit volume englobe possiblement un minimum
+      local, ce qui permet d'obtenir une légère amélioration des performances.
+- exercise_id: 11b1284e-5aa4-42c1-bb1e-a89e8454f083
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Il est presque impossible de tester l'ensemble des valeurs d'hyperparamètres
+      en apprentissage profond, surtout en considérant la presque infinie possibilité
+      d'architectures. Ce n'est pas la bonne façon de procéder. Il faut plutôt identifier
+      les paramètres critiques de notre architecture et concentrer notre recherche
+      autour d'eux. Dans certaines situations, des approches telles que l'apprentissage
+      actif (*active learning*) ou bayésien sont plus appropriées.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il est presque impossible de tester l'ensemble des
+      valeurs d'hyperparamètres en apprentissage profond, surtout en considérant la
+      presque infinie possibilité d'architectures. Ce n'est pas la bonne façon de
+      procéder. Il faut plutôt identifier les paramètres critiques de notre architecture
+      et concentrer notre recherche autour d'eux. Dans certaines situations, des approches
+      telles que l'apprentissage actif (*active learning*) ou bayésien sont plus appropriées.
+- exercise_id: 12b7e0f5-7909-4575-9ae7-de0194189804
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les horaires d'entraînement permettent de réduire
+      le surapprentissage en arrêtant l'entraînement lorsque la perte en validation
+      ne diminue plus de manière significative.
+  - answer: false
+    score: 0
+    explanation: Les horaires d'entraînement permettent de réduire le surapprentissage
+      en arrêtant l'entraînement lorsque la perte en validation ne diminue plus de
+      manière significative.

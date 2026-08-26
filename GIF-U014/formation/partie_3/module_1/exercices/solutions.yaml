@@ -1,0 +1,27 @@
+- exercise_id: 336d92c8-c6e6-4820-b590-ea91ca21879d
+  reference_solution: '1'
+  feedback_list:
+  - answer: 1
+    score: 1
+    explanation: 'En effet, il s''agit d''un problème de classification binaire puisque
+      nous avons deux classes&puncsp;: avec ou sans animaux.'
+  - answer: 2
+    score: 0
+    explanation: Nous n'avons pas trois classes (chat, chien, et chat et chien) mais
+      bien deux classes (contient des animaux ou non).
+  - answer: 3
+    score: 0
+    explanation: Faux, nous voulons juste prédire une étiquette (avec ou sans animaux)
+      et non prédire s'il y a un chat ET un chien dans la même image.
+- exercise_id: 6abd40e5-c566-4bbf-923c-acd4778df19d
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Garder cette valeur entre 0 et 1 permet surtout de modéliser la probabilité
+      qu'une donnée appartienne à une classe. En utilisant un seuil, on peut alors
+      facilement formuler une prédiction.
+  - answer: false
+    score: 1
+    explanation: Effectivement, c'est surtout pour pouvoir interpréter cette valeur
+      comme une probabilité.

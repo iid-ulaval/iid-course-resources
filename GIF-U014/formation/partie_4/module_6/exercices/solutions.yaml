@@ -1,0 +1,35 @@
+- exercise_id: fb456c3a-a4aa-4127-bb6d-e797cb21f943
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, les méthodes de compression peuvent aussi effectuer des
+      transformations linéaires ou non linéaires pour trouver de nouvelles dimensions
+      qui expliquent une plus grande partie de la variabilité. Ces nouvelles dimensions
+      seront souvent une transformation provenant de plusieurs variables des données
+      initiales.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les méthodes de compression peuvent aussi effectuer
+      des transformations linéaires ou non linéaires pour trouver de nouvelles dimensions
+      qui expliquent une plus grande partie de la variabilité. Ces nouvelles dimensions
+      seront souvent une transformation provenant de plusieurs variables des données
+      initiales.
+- exercise_id: ee447be9-0496-4f29-88af-d9dc27f2f8d9
+  reference_solution: '1'
+  feedback_list:
+  - answer: 1
+    score: 1
+    explanation: En effet, la PCA cherche à réduire la dimensionnalité de plusieurs
+      variables.
+  - answer: 2
+    score: 0
+    explanation: La LDA cherche à maximiser la distance des groupes par rapport à
+      une étiquette. Dans la question, on ne souhaite pas séparer les données selon
+      une étiquette particulière donc la PCA est plus appropriée.
+  - answer: 3
+    score: 0
+    explanation: La PCA est très similaire à la LDA. Par contre, dans la LDA on cherche
+      à maximiser la distance des groupes par rapport à une étiquette. Dans la question,
+      on ne souhaite pas séparer les données selon une étiquette particulière donc
+      la PCA est plus appropriée.

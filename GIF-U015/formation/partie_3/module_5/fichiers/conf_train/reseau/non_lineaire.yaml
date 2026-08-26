@@ -1,0 +1,3 @@
+nombre_de_couches: 4
+nombre_de_neurones_par_couche: [2, 4, 4, 2]
+activation: True

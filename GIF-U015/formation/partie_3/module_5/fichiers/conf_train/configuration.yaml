@@ -1,0 +1,4 @@
+defaults:
+  - reseau: non_lineaire
+  - optimisation: sgd
+  - hyperparametres: hparams

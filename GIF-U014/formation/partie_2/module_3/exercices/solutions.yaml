@@ -1,0 +1,30 @@
+- exercise_id: 14dcdec2-6510-45b1-be7d-fcfe614d7239
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Bien que l'ajout des chevaux contribuera à augmenter la vitesse maximale
+      de 1 km/h ($0,5 \times 2$), l'augmentation de poids viendra la réduire de 2
+      km/h ($-0,02 \times 100$). La vitesse estimée par ce modèle sera donc globalement
+      <strong>réduite</strong> de 1 km/h.
+  - answer: false
+    score: 1
+    explanation: En effet, l'ajout des chevaux augmentera la vitesse de 1 km/h ($0,5
+      \times 2$), mais l'augmentation de poids viendra aussi la réduire de 2 km/h
+      ($-0,02 \times 100$). La vitesse estimée par ce modèle sera donc globalement
+      <strong>réduite</strong> de 1 km/h.
+- exercise_id: 631d78e8-d9d8-4de9-93dc-48fc65557f76
+  reference_solution: '3'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Car, cette option traite la valeur de la ville comme si elle était
+      continue.
+  - answer: 2
+    score: 0
+    explanation: Car, cette option possède trois (3) variables, une pour chaque ville,
+      alors que seulement deux (2) sont nécessaires.
+  - answer: 3
+    score: 1
+    explanation: En effet, cette option n'utilise que deux variables pour les villes
+      en incluant la troisième ville dans le terme $a0$.

@@ -1,0 +1,4 @@
+nombre_de_cycles: 5
+proportion_d_entrainement: 0.8
+proportion_de_validation: 0.1
+taille_des_minibatch: 16

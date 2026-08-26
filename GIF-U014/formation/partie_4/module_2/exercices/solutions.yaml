@@ -1,0 +1,15 @@
+- exercise_id: d96147a9-28c2-4244-8618-f8a4a35a8d30
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il est important de s'assurer que les données possèdent
+      vraisemblablement des erreurs ou qu'elles sont des données aux extrémités de
+      la distribution. Il sera d'ailleurs aussi plus facile d'ajuster la paramétrisation
+      des algorithmes de détection des données aberrantes.
+  - answer: false
+    score: 0
+    explanation: Il est important de s'assurer que les données possèdent vraisemblablement
+      des erreurs ou qu'elles sont des données aux extrémités de la distribution.
+      Il sera d'ailleurs aussi plus facile d'ajuster la paramétrisation des algorithmes
+      de détection des données aberrantes.

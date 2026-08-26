@@ -1,0 +1,12 @@
+bs4
+fitz
+matplotlib
+nltk
+pandas
+pdfminer
+scrapy
+spacy
+spacy_langdetect
+spellchecker
+sweetviz
+wordcloud

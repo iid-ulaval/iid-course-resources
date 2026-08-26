@@ -1,0 +1,14 @@
+- exercise_id: e22b5d53-367e-4c90-94bd-687496d7526c
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'utilisation d'outils de visualisation des résultats
+      comme TensorBoard est un incontournable dans le processus d'expérimentation
+      de réseaux d'apprentissage profond. Ils permettent de visualiser rapidement
+      vos résultats.
+  - answer: false
+    score: 0
+    explanation: ' L''utilisation d''outils de visualisation des résultats comme TensorBoard
+      est un incontournable dans le processus d''expérimentation de réseaux d''apprentissage
+      profond. Ils permettent de visualiser rapidement vos résultats'

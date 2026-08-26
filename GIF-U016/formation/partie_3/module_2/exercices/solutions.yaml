@@ -1,0 +1,99 @@
+- exercise_id: 8a3a18fc-0711-4598-8c36-996d659ba933
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Oui, la tokénisation est une étape importante, mais il faut prioriser
+      l'utilisation des tokéniseurs déjà existants, ils sont déjà très performants.
+  - answer: false
+    score: 1
+    explanation: En effet, la tokénisation est une étape importante, mais il ne faut
+      pas toujours refaire les tokéniseurs.
+- exercise_id: 6558ae70-6c3f-4d93-9653-15cd75c1900e
+  reference_solution: "# taille des n-grammes\nN = 2\n\n# dictionnaire des n-grammes\n\
+    n_grams = {}\n\n# découper le texte en tokens\ntokenized_data = nltk.word_tokenize(data)\n\
+    \n# compter la fréquence d'apparition des bigrammes\nfor i in range(0, len(tokenized_data)\
+    \ - N + 1):\n    words = tuple(tokenized_data[i : i + N])\n    n_grams[words]\
+    \ = n_grams.get(words, 0) + 1\n\n# ne conserver que les bigrammes apparaissant\
+    \ plus de deux fois\ndico_freq = dict(filter(lambda x: x[1] > 2, n_grams.items()))"
+  feedback_list: null
+- exercise_id: f765a8a0-bf7f-4a7b-bab6-cc7a3c307b9e
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, les n-grammes permettent de calculer la fréquence
+      à laquelle les mots apparaissent les uns avec les autres.
+  - answer: false
+    score: 0
+    explanation: Les n-grammes permettent de calculer la fréquence à laquelle les
+      mots apparaissent les uns avec les autres.
+- exercise_id: d4c13eca-7477-45cf-ba89-fd064572b1e9
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, en jouant avec la taille de la fenêtre (n) des n-grammes,
+      nous pouvons analyser les concepts écrits en plusieurs mots dans notre jeu de
+      données et choisir de les regrouper en un seul mot pour capturer ce concept.
+  - answer: false
+    score: 0
+    explanation: en jouant avec la taille de la fenêtre (n) des n-grammes, nous pouvons
+      analyser les concepts écrits en plusieurs mots dans notre jeu de données et
+      choisir de les regrouper en un seul mot pour capturer ce concept.
+- exercise_id: cb87eeb5-4a5f-4b58-a062-0025aea59302
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Elle ne crée pas de véritables mots d'une langue.
+  - answer: false
+    score: 1
+    explanation: Effectivement, elle ne crée pas de véritables mots d'une langue.
+- exercise_id: 017eeea9-cbd9-4ce4-99af-9bb384ded933
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il s'agit de la définition de la lemmatisation.
+  - answer: false
+    score: 0
+    explanation: Il s'agit de la définition de la lemmatisation.
+- exercise_id: b229e40c-0143-4ff8-99a1-6ef77a5bdcc8
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: C'est plutôt l'inverse.
+  - answer: false
+    score: 1
+    explanation: Effectivement, la lemmatisation n'est pas plus rapide que la racinisation.
+- exercise_id: a53394a9-840c-42f9-b1c1-9a2195efeccb
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, l'utilisation conjointe des deux processus peut théoriquement
+      améliorer la normalisation des textes. Toutefois, en pratique, ce n'est pas
+      toujours vrai et n'améliore pas toujours les résultats.
+  - answer: false
+    score: 1
+    explanation: L'utilisation conjointe des deux processus peut théoriquement améliorer
+      la normalisation des textes. Toutefois, en pratique, ce n'est pas toujours vrai
+      et n'améliore pas toujours les résultats.
+- exercise_id: 18e82ebe-dec6-4df0-8b62-14ca8b1437f2
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: L'inconvénient de la racinisation est que ce processus ne créé pas
+      de véritables mots de la langue. Ces mots transformés ne pourront donc pas être
+      convenablement normalisés par le lemmatiseur. Il est donc préférable de débuter
+      par la lemmatisation.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, la lemmatisation doit être effectuée en premier puisque
+      cette approche permet de générer de véritables mots de la langue alors que la
+      racinisation ne le peut pas.

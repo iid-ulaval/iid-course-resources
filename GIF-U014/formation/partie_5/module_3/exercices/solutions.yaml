@@ -1,0 +1,34 @@
+- exercise_id: 695753f3-28fa-485a-902d-faad61c9e85c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En général, les contraintes apportées par la régularisation vont
+      <strong>diminuer</strong> les performances de l'algorithme sur l'ensemble d'entraînement.
+      Par contre, ces contraintes vont particulièrement impacter les paramètres du
+      modèle qui servent seulement à diminuer l'erreur sur quelques données particulières
+      (éviter le surapprentissage). La performance sur l'ensemble de validation va
+      donc généralement bénéficier des méthodes de régularisation.
+  - answer: false
+    score: 1
+    explanation: Effectivement, en général, les contraintes apportées par la régularisation
+      vont <strong>diminuer</strong> les performances de l'algorithme sur l'ensemble
+      d'entraînement. Par contre, ces contraintes vont particulièrement impacter les
+      paramètres du modèle qui servent seulement à diminuer l'erreur sur quelques
+      données particulières (éviter le surapprentissage). La performance sur l'ensemble
+      de validation va donc généralement bénéficier des méthodes de régularisation.
+- exercise_id: 9a6313c9-b0a1-4fe4-a6fd-b694aca30deb
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, si le paramètre est à 0, cela signifie que la pénalité
+      d'avoir ce coefficient non nul est plus grande que son impact sur la diminution
+      de la perte (MSE). On peut donc supposer que cette variable n'a pas d'impact
+      significatif sur la variable d'intérêt.
+  - answer: false
+    score: 0
+    explanation: Si le paramètre est à 0, cela signifie que la pénalité d'avoir ce
+      coefficient non nul est plus grande que son impact sur la diminution de la perte
+      (MSE). On peut donc supposer que cette variable n'a pas d'impact significatif
+      sur la variable d'intérêt.

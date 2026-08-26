@@ -1,0 +1,61 @@
+- exercise_id: d0dc8745-668c-4535-935c-855f54303190
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, les perceptrons multicouches peuvent travailler avec des vecteurs
+      de mots. Ils ne sont juste pas bien adaptés au contexte du langage.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les perceptrons multicouches peuvent travailler avec
+      des vecteurs de mots. Ils ne sont juste pas bien adaptés au contexte du langage.
+- exercise_id: c210004f-8f98-4c93-8926-f82461dd1230
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, pour la classification nous utilisons uniquement les deuxièmes
+      valeurs (soit le <i>résumé</i> des textes).
+  - answer: false
+    score: 1
+    explanation: Effectivement, pour la classification nous utilisons uniquement les
+      deuxièmes valeurs (soit le <i>résumé</i> des textes).
+- exercise_id: f9cd72d9-d8e3-4056-a2d6-6cc66cbe2e3f
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, les marges ne retirent pas de mots de la séquence.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, les marges ne retirent pas de séquences après leur traitement.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Exactement, l'ajout de marge uniformise la longueur des séquences
+      selon la taille de la plus longue séquence.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Faux, il s'agit de la lemmatisation.
+- exercise_id: 5c12aece-931f-443b-aa3a-faf8df34c823
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, le packing ne modifie pas le contenu des séquences.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Exactement, le <i>packing</i> retirent des séquences après leur traitement.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Faux, il s'agit de l'ajout de marge.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Faux, il s'agit de la lemmatisation.

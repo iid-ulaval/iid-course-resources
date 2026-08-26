@@ -1,0 +1,55 @@
+- exercise_id: edf7381a-3034-43f4-8549-9500e0a345c5
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Faux, on peut voir cette tâche comme une tâche de classification
+      où chaque classe a une probabilité et la classe prédite est celle ayant la plus
+      grande probabilité. Puisqu'on veut prédire une classe pour chaque pixel, on
+      utilise autant de canaux qu'il y a de classes et chacun a la même taille que
+      l'image en entrée.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Faux, on peut voir cette tâche comme une tâche de classification
+      où chaque classe a une valeur prédite et la classe prédite est celle qui a la
+      plus grande valeur. Par contre, comme on veut prédire une classe pour chaque
+      pixel, on garde la taille des canaux associés à la taille de l'image et on ajoute
+      un canal pour chaque classe.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: En effet, on peut voir cette tâche comme une tâche de classification
+      où chaque classe a une valeur prédite et la classe prédite est celle qui a la
+      plus grande valeur. Par contre, comme on veut prédire une classe pour chaque
+      pixel, on garde la taille des canaux associés à la taille de l'image et on ajoute
+      un canal pour chaque classe.
+- exercise_id: ea046fb0-e6ae-4e77-a12f-dd02642d4ede
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, plus une carte d'attribut est petite, plus grand est son
+      grand champ réceptif dans l'image initiale et plus générale est l’information
+      qu’elle contient. La carte d'attribut générée, après le « up-sampling », va
+      donc contenir une information moins détaillée à propos d'une zone de l'image.
+  - answer: false
+    score: 0
+    explanation: En fait, plus une carte d'attribut est petite, plus grand est son
+      grand champ réceptif dans l'image initiale et plus générale est l’information
+      qu’elle contient. La carte d'attribut générée, après le « up-sampling », va
+      donc contenir une information moins détaillée à propos d'une zone de l'image.
+- exercise_id: 7e0116be-ea51-4290-a202-4382ed797169
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, même si la zone prédite est entièrement dans la vraie zone,
+      on ne sait pas si la vraie zone est aussi entièrement dans la zone prédite.
+      On peut juste affirmer que l'index de Jaccard n'est pas de zéro.
+  - answer: false
+    score: 1
+    explanation: En effet, même si la zone prédite est entièrement dans la vraie zone,
+      on ne sait pas si la vraie zone est aussi entièrement dans la zone prédite.
+      On peut juste affirmer que l'index de Jaccard n'est pas de zéro.

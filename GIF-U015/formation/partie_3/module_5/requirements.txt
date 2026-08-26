@@ -1,0 +1,7 @@
+hydra
+matplotlib
+paxutils
+poutyne
+scikit-learn
+torch
+yaml

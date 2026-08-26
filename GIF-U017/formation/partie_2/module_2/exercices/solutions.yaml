@@ -1,0 +1,169 @@
+- exercise_id: 067e36f7-6bd9-4649-aade-34e57b711350
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, c'est vrai, mais sous certaines conditions. Dans la
+      grande majorité des cas, il est possible d'interpréter les coefficients. Par
+      exemple, imaginons un cas avec des variables catégoriques claires telles que
+      l'âge et le nombre d'années d'expérience, pour expliquer le salaire d'un employé.
+      Dans cette situation, les coefficients ont un signification évidente. Toutefois,
+      dans notre cas, une représentation matricielle avec le nombre de mots rend la
+      tâche d'interprétation très complexe, voire même impossible ou peu pertinente.
+  - answer: false
+    score: 0
+    explanation: Vrai, mais sous certaines conditions. Dans la grande majorité des
+      cas, il est possible d'interpréter les coefficients. Par exemple, imaginons
+      un cas avec des variables catégoriques claires telles que l'âge et le nombre
+      d'années d'expérience, pour expliquer le salaire d'un employé. Dans cette situation,
+      les coefficients ont un signification évidente. Toutefois, dans notre cas, une
+      représentation matricielle avec le nombre de mots rend la tâche d'interprétation
+      très complexe, voire même impossible ou peu pertinente.
+- exercise_id: 7ddea5da-de1a-4a2f-9ba8-b9c600546882
+  reference_solution: '{1}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 1
+    explanation: Effectivement, le modèle est en sous-apprentissage puisqu'il pourrait
+      améliorer sa frontière de décision et ainsi réduire ses erreurs sur les données
+      d'entraînement et de test.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Le modèle n'est pas en situation d'apprentissage optimal. Il peut
+      encore s'améliorer.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Le modèle n'est pas en situation de surapprentissage, il est plutôt
+      en sous-apprentissage.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: La borne de décision n'est pas incomplète.
+- exercise_id: 0ef30de8-0ebd-4b8e-9284-4a32b55dba5e
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: L'utilisation de la régularisation n'est pas nécessaire ici puisque
+      nous sommes en situation de sous-apprentissage.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, le modèle manque soit de complexité pour capturer
+      l'informationdans les données ou manque de variables indépendantes pour être
+      en mesure d'apprendre sa tâche.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Le modèle est en situation de sous-apprentissage, nous pouvons augmenter
+      la complexité du modèle ou augmenter le nombre de variables indépendantes.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Le retrait de données ne permettra pas au modèle de mieux généraliser.
+  - answer: !!set
+      5: null
+    score: 0
+    explanation: L'ajout de bruit dans les données ne facilitera pas l'apprentissage
+      dans un cas de sous-apprentissage.
+- exercise_id: cfc59da3-1906-48af-8dcf-198f77b43ea1
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Le modèle n'est pas en sous-apprentissage puisqu'il a peaufiné au
+      mieux la borne de décision, sans toutefois faire de surapprentissage.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, le modèle est en situation d'apprentissage optimal.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Le modèle n'est pas en situation de surapprentissage.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: La borne de décision n'est pas incomplète.
+- exercise_id: 5a6aa7b0-9cff-4cdb-975d-2639466e116b
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: L'utilisation de la régularisation n'est pas nécessaire ici puisque
+      nous sommes en situation d'apprentissage optimal.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: L'ajout de complexité n'est pas nécessaire ici puisque nous sommes
+      en situation d'apprentissage optimal.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Effectivement, nous n'avons rien à faire ici puisque nous sommes
+      en situation d'apprentissage optimal.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Le retrait de données pourrait réduire les performances du modèle.
+      Il n'y a donc rien à faire.
+  - answer: !!set
+      5: null
+    score: 0
+    explanation: L'ajout de bruit dans les données ne facilitera pas l'apprentissage
+      dans notre cas.
+- exercise_id: 8f14c0e3-d2f5-49b2-9849-f66ad52c998d
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Le modèle n'est pas en sous-apprentissage, mais plutôt en surapprentissage.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Le modèle n'est pas en situation d'apprentissage optimal. Il a fait
+      du surapprentissage.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Effectivement, le modèle est en surapprentissage puisqu'il a appris
+      à spécifiquement isoler chacun des cas dans le jeu de données d'entraînement.
+      Ce genre de situation va résulter en une performance moindre sur le jeu de données
+      de test puisque la frontière est trop finement ajustée.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: La borne de décision n'est pas incomplète.
+- exercise_id: 1241e10d-d8b1-4e52-90d0-9b68e60045a7
+  reference_solution: '{1}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 1
+    explanation: Effectivement, la régularisation est à prioriser dans un cas de surapprentissage.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: L'ajout de complexité n'est pas une bonne solution ici puisque nous
+      sommes en situation de surapprentissage.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Nous sommes en situation de surapprentissage. Il y a des approches
+      possibles pour corriger cela.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Retirer des données ne permettra pas de réduire le problème de surapprentissage.
+  - answer: !!set
+      5: null
+    score: 0
+    explanation: L'ajout de bruit dans les données pourrait partiellement réduire
+      le problème, mais l'approche à prioriser en premier est la régularisation.

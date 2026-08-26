@@ -1,0 +1,24 @@
+- exercise_id: 6ab47919-9d89-4ffa-bd90-16376f1246fe
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il s'agit de l'intérêt principal de ces solutions.
+  - answer: false
+    score: 0
+    explanation: Il s'agit de l'intérêt principal de ces solutions. Il est préférable
+      d'utiliser ce type d'approche pour faciliter le versionnage du code d'un projet.
+      Cette approche est déterministe et permet de garder un historique facilement
+      navigable du code source.
+- exercise_id: b5cd03b9-88e4-4e77-8e92-b7f6797122b0
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il s'agit de l'intérêt principal de ces solutions.
+  - answer: false
+    score: 0
+    explanation: Il s'agit de l'intérêt principal de ces solutions. Il est préférable
+      d'utiliser ce type d'approche pour faciliter le versionnage des données. Cette
+      approche est déterministe et permet de garder un historique facilement navigable
+      des différentes versions (et différences) entre les données.

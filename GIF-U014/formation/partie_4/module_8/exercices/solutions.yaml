@@ -1,0 +1,43 @@
+- exercise_id: 6440f944-e0c5-44cf-8877-b42100ec5427
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, toutes les combinaisons possibles de paramètres seront
+      essayées. Ce type de recherche permettra d'avoir une recherche exhaustive, mais
+      très longue. Il existe d'autres méthodes de recherches qui seront moins exhaustives,
+      mais moins onéreuses en temps (p. ex. une recherche aléatoire ou de l'optimisation
+      bayésienne).
+  - answer: false
+    score: 0
+    explanation: Toutes les combinaisons possibles de paramètres seront essayées.
+      Ce type de recherche permettra d'avoir une recherche exhaustive, mais très longue.
+      Il existe d'autres méthodes de recherches qui seront moins exhaustives, mais
+      moins onéreuses en temps (p. ex. une recherche aléatoire ou de l'optimisation
+      bayésienne).
+- exercise_id: b2cf101b-6f23-4c54-afdf-17bb256023ea
+  reference_solution: '3'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Cette étape est une étape de prétraitement qui consiste à effectuer
+      des transformations sur les données avant qu'elles soient utilisées pour effectuer
+      la tâche d'intérêt.
+  - answer: 2
+    score: 0
+    explanation: Cette étape est une étape de prétraitement qui consiste à effectuer
+      des transformations sur les données avant qu'elles soient utilisées pour effectuer
+      la tâche d'intérêt.
+  - answer: 3
+    score: 1
+    explanation: En effet, cette étape est davantage une tâche d'intérêt qu'un prétraitement.
+  - answer: 4
+    score: 0
+    explanation: Cette étape est une étape de prétraitement qui consiste à effectuer
+      des transformations sur les données avant qu'elles soient utilisées pour effectuer
+      la tâche d'intérêt.
+  - answer: 5
+    score: 0
+    explanation: Cette étape est une étape de prétraitement qui consiste à effectuer
+      des transformations sur les données avant qu'elles soient utilisées pour effectuer
+      la tâche d'intérêt.

@@ -1,0 +1,10 @@
+- exercise_id: 81fa773f-dbb8-49ab-a2e3-155810c46c98
+  reference_solution: 'réponse = False
+
+
+    # La régularisation n''est pas l''approche à prioriser ici. Toutefois, pourrait
+    d''améliorer les performances, mais cette approche ne nous permet pas de mieux
+    comprendre pourquoi ces classes sont mélangées par le classificateur. L''approche
+    à prioriser dans ce contexte est d''effectuer un diagnostic des erreurs et d''améliorer
+    la représentation de nos textes.'
+  feedback_list: null

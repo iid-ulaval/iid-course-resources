@@ -1,0 +1,46 @@
+- exercise_id: e7df8b80-3c43-434b-a857-77b4fee24015
+  reference_solution: "if not Doc.has_extension(\"correction\"):\n    Doc.set_extension(\"\
+    correction\", default=[])\nif not Token.has_extension(\"est_correct\"):\n    Token.set_extension(\"\
+    est_correct\", default=True)\n\n\n@Language.component(\"correcteur\")\ndef correcteur(doc):\n\
+    \    erreurs = 0\n    for i, token in enumerate(doc):\n        correction = spell.correction(token.text)\n\
+    \        doc._.correction.append(correction)\n        if correction != token.text:\n\
+    \            token._.est_correct = False\n            erreurs += 1\n    print(\"\
+    Nombre d'erreurs :\", erreurs)\n    return doc"
+  feedback_list: null
+- exercise_id: 6f864e21-9a8c-422b-a806-08c0217ccc59
+  reference_solution: "tokens = nltk.word_tokenize(corpus)\ntri_grams = nltk.ngrams(corpus.split(),\
+    \ 3)\nfdist = nltk.FreqDist(tri_grams)\n\n\ndef prédiction_mot(mot1, mot2):\n\
+    \    tri_grams_triés = [\n        (k, v)\n        for k, v in sorted(\n      \
+    \      [k for k in fdist.items() if k[0][0] == mot1 and k[0][-1] == mot2],\n \
+    \           key=lambda x: x[1],\n            reverse=True,\n        )\n    ]\n\
+    \    return tri_grams_triés[0][0][1] if tri_grams_triés else None\n\n\nprint(prédiction_mot(\"\
+    les\", \"semaines\"))"
+  feedback_list: null
+- exercise_id: b0c806ae-556c-4d65-9393-807b5f7b248a
+  reference_solution: "nlp = spacy.load(str(model_path))\n\ndoc = nlp(data)\n\ncompte\
+    \ = 0\nstr_lemmes = \"\"  # pour WordCloud\n\nfor token in doc:\n    if token.lemma_\
+    \ == \"être\" or token.lemma_ == \"avoir\":\n        compte += 1\n    str_lemmes\
+    \ += \" \" + token.lemma_.lower()  # pour WordCloud\n\n# Affichage du WordCloud\n\
+    \nwordcloud = WordCloud().generate(str_lemmes)\nplt.figure()\nplt.imshow(wordcloud,\
+    \ interpolation=\"bilinear\")\nplt.show()\n\n# affecter la variable de succès\n\
+    succès = True"
+  feedback_list: null
+- exercise_id: ba4e64a8-a529-4a74-a36b-c95c1d558bae
+  reference_solution: "nlp = spacy.load(str(spacy_path))\n\nres = {}\n\nfor doc in\
+    \ nlp.pipe(data[\"Fable\"]):\n    for token in doc:\n        verb_form = token.morph.get(\"\
+    VerbForm\")\n        if verb_form:\n            res[verb_form[0]] = res.get(verb_form[0],\
+    \ 0) + 1"
+  feedback_list: null
+- exercise_id: fdccb72f-263c-4345-bb59-bd52c058bdff
+  reference_solution: 'data["longueur"] = data["Fable"].apply(len)
+
+
+    fig = px.histogram(data, x="longueur", nbins=15)
+
+    fig.show()
+
+
+    # affecter la variable de succès
+
+    succès = True'
+  feedback_list: null

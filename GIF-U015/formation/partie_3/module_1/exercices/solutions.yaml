@@ -1,0 +1,43 @@
+- exercise_id: 7213c93b-c275-4406-a483-89c9b309d738
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, pour la très vaste majorité des cas, PyTorch offre toutes
+      les composantes nécessaires pour développer une solution d'apprentissage profond.
+  - answer: false
+    score: 0
+    explanation: Pour la très vaste majorité des cas, PyTorch offre toutes les composantes
+      nécessaire pour développer une solution d'apprentissage profond.
+- exercise_id: 70499139-e54b-4c23-838a-716a92c3a23a
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, ce sont des vecteurs et matrices multidimensionnels.
+  - answer: false
+    score: 0
+    explanation: Les tenseurs sont des vecteurs et matrices multidimensionnels.
+- exercise_id: 3fcdcdb5-0945-4eeb-b288-d7c6e52d8318
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux, cet attribut n'existe pas. Il s'agit plutôt de `requires_grad`.
+      Il est important de connaître cet attribut, car il peut arriver que vous ne
+      désiriez pas qu'une couche soit incluse dans le processus d'apprentissage (ce
+      sera discuté dans des formations subséquentes).
+  - answer: false
+    score: 1
+    explanation: En effet, il ne s'agit pas du bon nom d'attribut qui est plutôt `requires_grad`.
+- exercise_id: 19b06368-3b44-4ad5-abe6-9c9172c12fde
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Les tenseurs d'un lot doivent obligatoirement tous avoir les mêmes
+      dimensions.
+  - answer: false
+    score: 1
+    explanation: En effet, les tenseurs d'un lot doivent obligatoirement tous avoir
+      les mêmes dimensions.

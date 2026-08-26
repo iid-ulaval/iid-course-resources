@@ -1,0 +1,36 @@
+- exercise_id: 59d72c99-cbf1-496d-9ce8-1a64e98c0a41
+  reference_solution: '{3}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Les résultats ne démontrent pas un grave problème de surapprentissage.
+  - answer: !!set
+      2: null
+    score: 0
+    explanation: Ils sont en fait macro.
+  - answer: !!set
+      3: null
+    score: 1
+    explanation: Effectivement, puisqu'il y a plusieurs classes, il serait pertinent
+      de vérifier si des classes sont souvent confondues ensemble par le NER.
+  - answer: !!set
+      1: null
+      2: null
+    score: 0
+    explanation: Les résultats ne démontrent pas un grave problème de surapprentissage
+      et ils sont en fait macro.
+  - answer: !!set
+      1: null
+      3: null
+    score: 0.5
+    explanation: Les résultats ne démontrent pas un grave problème de surapprentissage,
+      mais effectivement, puisqu'il y a plusieurs classes, il serait pertinent de
+      vérifier si des classes sont souvent confondues ensemble par le NER.
+  - answer: !!set
+      2: null
+      3: null
+    score: 0.5
+    explanation: Ils sont en fait macro, mais effectivement, puisqu'il y a plusieurs
+      classes, il serait pertinent de vérifier si des classes sont souvent confondues
+      ensemble par le NER.

@@ -1,0 +1,65 @@
+- exercise_id: ab87f465-ff75-4bf6-81e0-9c313700a8eb
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Cette approche risquerait de créer de la redondance avec les méthodes
+      d'encodage. Ça pourrait mener à du surapprentissage et notre modèle pourrait
+      sous-performer pour un nouveau type de vêtement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, cette approche risquerait de créer de la redondance
+      avec les méthodes d'encodage. Ça pourrait mener à du surapprentissage et notre
+      modèle pourrait sous-performer pour un nouveau type de vêtement.
+- exercise_id: e959a793-f4e0-42ca-814d-a1010ba9eebb
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, contrairement à l'autre approche, ce type d'attribut
+      permettrait de mieux généraliser avec de nouveaux types de vêtements utilisant
+      des échelles similaires. Ça pourrait faciliter la discrimination entre des catégories
+      de vêtements.
+  - answer: false
+    score: 0
+    explanation: Contrairement à l'autre approche, ce type d'attribut permettrait
+      de mieux généraliser avec de nouveaux types de vêtements utilisant des échelles
+      similaires. Ça pourrait faciliter la discrimination entre des catégories de
+      vêtements.
+- exercise_id: 36340a1b-a4c1-4d07-a503-648e82a23e7c
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Il faut se concentrer sur les erreurs des modèles sur l'ensemble
+      de validation et construire nos attributs avec les données d'entraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il faut se concentrer sur les erreurs des modèles
+      sur l'ensemble de validation et construire nos attributs avec les données d'entraînement.
+- exercise_id: c16f7ba2-02b0-4185-a7a1-0854d5daa02a
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, ce processus itératif permet de déterminer, par essais
+      et erreurs, si un nouvel attribut est nécessaire et, une fois intégré à un modèle,
+      s’il permet d’en améliorer les performances sur les données de validation.
+  - answer: false
+    score: 0
+    explanation: Ce processus itératif permet de déterminer, par essais et erreurs,
+      si un nouvel attribut est nécessaire et, une fois intégré à un modèle, s’il
+      permet d’en améliorer les performances sur les données de validation.
+- exercise_id: 63884e9b-79fd-46c6-a4b6-256d115ac318
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, plusieurs approches dans la littérature (p. ex. https://ojs.aaai.org/index.php/ICWSM/article/view/14550)
+      utilisent ce genre de dictionnaire pour générer des attributs pour l'analyse
+      des sentiments.
+  - answer: false
+    score: 0
+    explanation: Plusieurs approches dans la littérature (p. ex. https://ojs.aaai.org/index.php/ICWSM/article/view/14550)
+      utilisent ce genre de dictionnaire pour générer des attributs pour l'analyse
+      des sentiments.

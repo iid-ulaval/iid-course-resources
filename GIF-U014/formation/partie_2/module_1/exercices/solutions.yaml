@@ -1,0 +1,38 @@
+- exercise_id: 1e55e95f-6f4d-4ae7-9ac3-076fd5952beb
+  reference_solution: '1'
+  feedback_list:
+  - answer: 1
+    score: 1
+    explanation: En effet, la variable qu'on cherche à prédire est $y$. Les variables
+      qui nous permettront de trouver cette prédiction sont les $x$.
+  - answer: 2
+    score: 0
+    explanation: La variable qu'on cherche à prédire est $y$. Les variables qui nous
+      permettront de trouver cette prédiction sont les $x$.
+  - answer: 3
+    score: 0
+    explanation: La variable qu'on cherche à prédire est $y$. Les variables qui nous
+      permettront de trouver cette prédiction sont les $x$.
+  - answer: 4
+    score: 0
+    explanation: La variable qu'on cherche à prédire est $y$. Les variables qui nous
+      permettront de trouver cette prédiction sont les $x$.
+  - answer: 5
+    score: 0
+    explanation: La variable qu'on cherche à prédire est $y$. Les variables qui nous
+      permettront de trouver cette prédiction sont les $x$.
+- exercise_id: 233bd511-9869-4b86-8922-a282f544772f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: C'est l'inverse. Les méthodes à arbre décisionnel permettent généralement
+      d'obtenir de meilleures prédictions, mais l'impact des variables dépendantes
+      sur la variable d'intérêt est plus difficile à interpréter qu'avec la régression
+      linéaire.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les méthodes à arbre décisionnel permettent généralement
+      d'obtenir de meilleures prédictions, mais l'impact des variables dépendantes
+      sur la variable d'intérêt est plus difficile à interpréter qu'avec la régression
+      linéaire.

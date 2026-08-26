@@ -1,0 +1,5 @@
+IPython
+numpy
+poutyne
+scikit-learn
+torch

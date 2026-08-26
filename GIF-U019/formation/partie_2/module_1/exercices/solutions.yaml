@@ -1,0 +1,100 @@
+- exercise_id: 05ce28a6-a107-40fa-9a3d-3b864b5af238
+  reference_solution: result = conv2(conv1(image))
+  feedback_list: null
+- exercise_id: d7cf7c5f-5b13-4969-b55a-892435fe74ac
+  reference_solution: "couche_changement_dimension = nn.Flatten()\nsortie_couche_convolution2_modifiee\
+    \ = couche_changement_dimension(\n    sortie_couche_convolution2\n)"
+  feedback_list: null
+- exercise_id: d50df09f-f5e5-4179-964f-aedddcbb5863
+  reference_solution: "class ConvNet(nn.Module):\n    def __init__(self):\n      \
+    \  super().__init__()\n        self.conv1 = nn.Conv2d(1, 16, 3, padding=1, bias=False)\n\
+    \n        self.conv2 = nn.Conv2d(16, 10, 5, padding=2, bias=False)\n\n       \
+    \ self.conv3 = nn.Conv2d(10, 10, 1, padding=0, bias=False)\n\n        self.flatten\
+    \ = nn.Flatten(1)\n        self.fc = nn.Linear(10 * 28 * 28, 10)\n\n    def forward(self,\
+    \ x):  # Rien à changer\n        x = F.relu(self.conv1(x))\n        x = F.relu(self.conv2(x))\n\
+    \        x = F.relu(self.conv3(x))\n        x = self.flatten(x)\n        x = self.fc(x)\n\
+    \        return x"
+  feedback_list: null
+- exercise_id: 0d381ad6-d07a-447f-a2ef-b3d8b137473f
+  reference_solution: "solution = True\n\nprint(\n    f\"{'Type de couche':<15} {'Nombre\
+    \ de filtres':<25} {'Dimension des filtres':<25} {'Pas':<5} {'Padding':<10} {'Dimension\
+    \ de la sortie':<25} {'Nombre de paramètres':<25}\"\n)\nprint(\n    f\"{'Convolution':<15}\
+    \ {16:<25} {'1x3x3':<25} {1:<5} {1:<10} {'16x28x28':<25} {144:<25}\"\n)\nprint(\n\
+    \    f\"{'Convolution':<15} {10:<25} {'16x5x5':<25} {1:<5} {2:<10} {'10x28x28':<25}\
+    \ {4000:<25}\"\n)\nprint(\n    f\"{'Convolution':<15} {10:<25} {'10x1x1':<25}\
+    \ {1:<5} {0:<10} {'19x28x28':<25} {100:<25}\"\n)\nprint(f\"{'Flatten':<15} {'':<25}\
+    \ {'':<25} {'':<5} {'':<10} {'1x7840':<25} {0:<25}\")\nprint(f\"{'Linéaire':<15}\
+    \ {'':<25} {'':<25} {'':<5} {'':<10} {'1x10':<25} {78400:<25}\")"
+  feedback_list: null
+- exercise_id: a12d218a-598e-4bfe-8fe8-14c59517f897
+  reference_solution: "class ConvNet(nn.Module):\n    def __init__(self):\n      \
+    \  super().__init__()\n\n        self.conv1 = nn.Conv2d(3, 16, 3, padding=0, bias=False)\n\
+    \n        self.conv2 = nn.Conv2d(16, 10, 5, padding=1, bias=False)\n        self.conv3\
+    \ = nn.Conv2d(10, 10, 1, padding=0, bias=False)\n\n        self.conv4 = nn.Conv2d(10,\
+    \ 15, 7, padding=0, bias=False)\n\n        self.flatten = nn.Flatten(1)\n\n  \
+    \      self.fc = nn.Linear(15 * 22 * 22, 10)  # À modifier si nécessaire\n\n \
+    \   def forward(self, x):  # Rien à changer\n        x = F.relu(self.conv1(x))\n\
+    \        x = F.relu(self.conv2(x))\n        x = F.relu(self.conv3(x))\n      \
+    \  x = F.relu(self.conv4(x))\n        x = self.flatten(x)\n        x = self.fc(x)\n\
+    \        return x\n\n\nnet = ConvNet()\nsummary(net, (3, 32, 32), device=\"cpu\"\
+    )"
+  feedback_list: null
+- exercise_id: a60b2f51-d1d8-4d69-97b8-8d596eae1534
+  reference_solution: "class ConvNet(nn.Module):\n    def __init__(self):\n      \
+    \  super(self, ConvNet).__init__()\n\n        self.conv1 = nn.Conv2d(3, 16, 3,\
+    \ stride=1, padding=0, bias=False)\n\n        self.conv2 = nn.Conv2d(16, 10, 5,\
+    \ stride=1, padding=1, bias=False)\n        self.conv3 = nn.Conv2d(10, 10, 1,\
+    \ stride=2, padding=0, bias=False)\n\n        self.conv4 = nn.Conv2d(10, 15, 7,\
+    \ stride=2, padding=2, bias=False)\n\n        self.flatten = nn.Flatten(1)\n\n\
+    \        self.fc = nn.Linear(15 * 6 * 6, 10)  # À modifier si nécessaire\n\n \
+    \   def forward(self, x):  # Rien à changer\n        x = F.relu(self.conv1(x))\n\
+    \        x = F.relu(self.conv2(x))\n        x = F.relu(self.conv3(x))\n      \
+    \  x = F.relu(self.conv4(x))\n        x = self.flatten(x)\n        x = self.fc(x)\n\
+    \        return x\n\n\nnet = ConvNet()\nsummary(net, (3, 32, 32), device=\"cpu\"\
+    )"
+  feedback_list: null
+- exercise_id: e80164da-2ee8-44aa-abfc-e6e2091c3816
+  reference_solution: "class ConvNet(nn.Module):\n    def __init__(self):\n      \
+    \  super().__init__()\n\n        self.conv1 = nn.Conv2d(3, 8, 3, stride=1, padding=1,\
+    \ bias=False)\n\n        self.conv2 = nn.Conv2d(8, 5, 5, stride=1, padding=2,\
+    \ bias=False)\n        self.conv3 = nn.Conv2d(5, 8, 3, stride=1, padding=0, bias=False)\n\
+    \n        self.flatten = nn.Flatten(1)\n\n        self.fc = nn.Linear(8 * 30 *\
+    \ 30, 10)  # À modifier si nécessaire\n\n    def forward(self, x):  # Rien à changer\n\
+    \        x = F.relu(self.conv1(x))\n        x = F.relu(self.conv2(x))\n      \
+    \  x = F.relu(self.conv3(x))\n        x = self.flatten(x)\n        x = self.fc(x)\n\
+    \        return x\n\n\nnet = ConvNet()\nsummary(net, (3, 32, 32), device=\"cpu\"\
+    )"
+  feedback_list: null
+- exercise_id: 38cc1878-88b7-4f05-96e5-cea6388b4089
+  reference_solution: "class ConvNet(nn.Module):\n    def __init__(self):\n      \
+    \  super().__init__()\n        self.conv1 = nn.Conv2d(3, 80, 3, padding=1)\n \
+    \       self.relu1 = nn.ReLU()\n        self.maxPool1 = nn.MaxPool2d(4)\n\n  \
+    \      self.conv2 = nn.Conv2d(80, 80, 3, padding=1)\n        self.relu2 = nn.ReLU()\n\
+    \n        self.conv3 = nn.Conv2d(80, 80, 3, padding=1)\n        self.relu3 = nn.ReLU()\n\
+    \        self.maxPool3 = nn.MaxPool2d(2)\n\n        self.conv4 = nn.Conv2d(80,\
+    \ 80, 3, padding=1)\n        self.relu4 = nn.ReLU()\n\n        self.flatten =\
+    \ nn.Flatten(1)\n\n        self.fc = nn.Linear(80 * 4 * 4, 10)\n\n    def forward(self,\
+    \ x):\n        x = self.relu1(self.conv1(x))\n        x = self.maxPool1(x)\n \
+    \       x = self.relu2(self.conv2(x))\n        x = self.relu3(self.conv3(x))\n\
+    \        x = self.maxPool3(x)\n        x = self.relu4(self.conv4(x))\n       \
+    \ x = self.flatten(x)\n        x = self.fc(x)\n        return x\n\n\nnet = ConvNet()\n\
+    summary(net, (3, 32, 32), device=\"cpu\")"
+  feedback_list: null
+- exercise_id: 668f135e-3fdc-473f-844e-8fb7bc67d91d
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Puisque la différence entre l'exactitude sur la validation et le
+      test est très faible, le surapprentissage ne permet pas de justifier le phénomène.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Effectivement, ce phénomène est dû à la complexité du réseau qui
+      est trop grande par rapport à la taille du jeu de données.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: ' L''initialisation du modèle ne permet pas non plus d''expliquer
+      ce phénomène.'

@@ -1,0 +1,65 @@
+- exercise_id: 1915815c-a090-4209-af32-2f9d6878cf21
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, le réseau CNN propage individuellement les régions d'intérêts
+      pour déterminer leurs classes. C'est d'ailleurs une des faiblesses associées
+      à ce type de méthode. Les méthodes provenant de la famille YOLO étudient des
+      méthodes où une seule propagation est nécessaire.
+  - answer: false
+    score: 1
+    explanation: En effet, le réseau CNN propage individuellement les régions d'intérêts
+      pour déterminer leurs classes. C'est d'ailleurs une des faiblesses associées
+      à ce type de méthode. Les méthodes provenant de la famille YOLO étudient des
+      méthodes où une seule propagation est nécessaire.
+- exercise_id: d56e9cf7-dddf-4b1b-ac17-ef3a7394f5c5
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, on connait déjà la position de l'objet d'intérêt grace
+      à la partie de proposition de régions. On passe donc cette région d'intérêt
+      dans le réseau CNN dans le seul but d'identifier sa classe.
+  - answer: false
+    score: 0
+    explanation: En fait, on connait déjà la position de l'objet d'intérêt grâce à
+      la partie de proposition de régions. On passe donc cette région d'intérêt dans
+      le réseau CNN dans le seul but d'identifier sa classe.
+- exercise_id: 6a8c350c-e8e8-4365-818b-e632b11e02e5
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: En fait, la perte en détection d'objets doit absolument inclure celle
+      liée à la position de la boîte englobante. L'entropie croisée ne concerne que
+      l'erreur de classification de l’image dans la boîte englobante. Il faut tenir
+      compte des deux types de perte.
+  - answer: false
+    score: 1
+    explanation: En effet, la perte en détection d'objets doit absolument inclure
+      celle liée à la position de la boîte englobante. L'entropie croisée ne concerne
+      que l'erreur de classification de l’image dans la boîte englobante. Il faut
+      tenir compte des deux types de perte.
+- exercise_id: 340f724a-bf6b-487b-ae1c-057a29f978d4
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Dans ce cas-ci, la régularisation n'est pas une approche qui semble
+      prometteuse. Les courbes ne sont pas si bruitées. Le modèle semble certes faire
+      du surapprentissage, mais le réel problème est le faible nombre de données d'entraînement
+      et de validation. Il serait donc préférable de débuter en faisant de l'augmentation
+      de données.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: En effet, augmenter le nombre de données est l'approche qui semble
+      la plus prometteuse pour améliorer la performance, mais aussi la robustesse
+      des résultats sur de nouvelles données.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Augmenter le nombre d’époques risque de favoriser l’apparition du
+      surapprentissage.

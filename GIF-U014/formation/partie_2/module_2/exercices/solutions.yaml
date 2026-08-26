@@ -1,0 +1,36 @@
+- exercise_id: 20a974eb-ee41-45cc-aec2-764b3ecd951c
+  reference_solution: '3'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Puisque l'ensemble des résidus semblent avoir une même distribution,
+      on semble avoir une distribution homoscédastique des erreurs.
+  - answer: 2
+    score: 0
+    explanation: Puisque l'ensemble des résidus semblent avoir la même distribution,
+      on semble avoir une distribution homoscédastique des résidus.
+  - answer: 3
+    score: 1
+    explanation: En effet, puisque l'ensemble des résidus semblent avoir la même distribution,
+      on semble avoir une distribution homoscédastique des résidus.
+  - answer: 4
+    score: 0
+    explanation: Puisque l'ensemble des résidus semblent avoir la même distribution,
+      on semble avoir une distribution homoscédastique des résidus.
+  - answer: 5
+    score: 0
+    explanation: Puisque l'ensemble des résidus semblent avoir la même distribution,
+      on semble avoir une distribution homoscédastique des résidu .
+- exercise_id: eaeb693e-61d7-47ea-802b-c1a239a0760f
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Le rôle de l'exposant est aussi de rendre tous les écarts positifs.
+      Sans cet exposant, la minimisation de la fonction produirait des écarts négatifs
+      infiniment grands.
+  - answer: false
+    score: 1
+    explanation: Effectivement, le rôle de l'exposant est aussi de rendre tous les
+      écarts positifs. Sans cet exposant, la minimisation de la fonction produirait
+      des écarts négatifs infiniment grands.

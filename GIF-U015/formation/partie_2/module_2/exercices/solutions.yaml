@@ -1,0 +1,40 @@
+- exercise_id: a3c06b3b-4f24-4804-8335-ecb469321361
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: C'est effectivement faux, un réseau pleinement connecté signifie
+      plutôt que l'entrée correspond à l'ensemble des sorties de la couche précédente.
+      Pour la couche d'entrée, les sorties sont les valeurs numériques des attributs
+      des données. La notion de pleinement connecté indique que toutes les sorties
+      des neurones d'une couche pointent vers toutes les entrées de la couche suivante.
+      Donc, chaque neurone n'est pas directement connecté avec les données.
+  - answer: false
+    score: 1
+    explanation: En effet, la notion de pleinement connecté indique plutôt que toutes
+      les sorties des neurones d'une couche pointent vers toutes les entrées de la
+      couche suivante. Donc, chaque neurone n'est pas connecté directement avec les
+      données.
+- exercise_id: 25ddbfe0-a9af-4bd9-908c-28b8324f6b63
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, ce sont les appellations des trois types de couches dans
+      un réseau de neurones profond pleinement connecté.
+  - answer: false
+    score: 0
+    explanation: Les réseaux de neurones pleinement connectés sont composés d'une
+      couche d'entrée, d'une couche de sortie et toutes les couches entre les deux
+      sont des couches dites cachées.
+- exercise_id: 26d94f6d-f4a4-494c-8813-b51246a2c821
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: En effet, les fonctions d'activation permettent d'apprendre sur des
+      données non linéairement séparables.
+  - answer: false
+    score: 0
+    explanation: les fonctions d'activation permettent d'apprendre sur des données
+      non linéairement séparables. Voir la démonstration à cet effet.

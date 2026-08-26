@@ -1,0 +1,36 @@
+- exercise_id: 799ddd90-58c7-4ce8-ae93-a20b95452c24
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Mauvaise réponse! Si le modèle donne de moins bonnes prédictions
+      qu'un classificateur aléatoire, ça veut dire qu'il prédira généralement la classe
+      inverse de la vraie classe d'une donnée. Il y a donc probablement une erreur
+      dans la règle de décision finale de la classification. Par exemple, seulement
+      prédire la classe opposée du modèle permet d'obtenir une aire sous la courbe
+      ROC de 0,9.
+  - answer: false
+    score: 1
+    explanation: Bonne réponse! Si le modèle donne de moins bonnes prédictions qu'un
+      classificateur aléatoire, ça veut dire qu'il prédira généralement la classe
+      inverse de la vraie classe d'une donnée. Il y a donc probablement une erreur
+      dans la règle de décision finale de la classification. Par exemple, seulement
+      prédire la classe opposée du modèle permet d'obtenir une aire sous la courbe
+      ROC de 0,9.
+- exercise_id: f474e1c9-dfbc-4beb-9f1b-de65e1cdd433
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Mauvaise réponse! Par exemple si un jeu de données possède 99 données
+      appartenant à une classe et 1 seule donnée à l'autre classe. On pourrait seulement
+      utiliser un classificateur aléatoire avec $p=1$ et on obtiendrait une précision
+      de 0,99. On doit donc toujours choisir nos métriques en fonction de la proportion
+      des classes.
+  - answer: false
+    score: 1
+    explanation: Bonne réponse! Par exemple si un jeu de données possède 99 données
+      appartenant à une classe et 1 seule donnée à l'autre classe. On pourrait seulement
+      utiliser un classificateur aléatoire avec $p=1$ et on obtiendrait une précision
+      de 0,99. On doit donc toujours choisir nos métriques en fonction de la proportion
+      des classes.

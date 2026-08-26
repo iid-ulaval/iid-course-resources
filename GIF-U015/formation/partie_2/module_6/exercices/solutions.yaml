@@ -1,0 +1,44 @@
+- exercise_id: 7e90b6ba-cb6d-49b6-b223-15313db13ba8
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Il faut aussi choisir les fonctions d'activation.
+  - answer: false
+    score: 1
+    explanation: En effet, il manque le choix des fonctions d'activation.
+- exercise_id: b84e6ea1-433f-40a0-8eed-ad0156cabc6e
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Faux! L'initialisation des paramètres ne doit jamais être constante.
+  - answer: false
+    score: 1
+    explanation: Effectivement, il ne s'agit pas d'une bonne méthode d'initialisation.
+- exercise_id: fa455270-6cbf-4fe5-91ee-6b62ba88791d
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, le choix d'un taux d'apprentissage n'est pas à prendre
+      à la légère. Un haut taux peut empêcher la convergence de l'algorithme d'apprentissage
+      vers le minimum global et un petit taux peut demander trop de temps pour que
+      l'algorithme converge.
+  - answer: false
+    score: 0
+    explanation: Le choix d'un taux d'apprentissage n'est pas à prendre à la légère.
+      Un haut taux peut empêcher la convergence de l'algorithme d'apprentissage vers
+      le minimum global et un petit taux peut demander trop de temps pour que l'algorithme
+      converge.
+- exercise_id: 0f6505bb-8a13-4665-a7fb-fa445ceffde3
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, il est préférable d'utiliser trois sous-ensembles
+      des données et de n'utiliser l'ensemble de test qu'une seule fois.
+  - answer: false
+    score: 0
+    explanation: Il est préférable d'utiliser trois sous-ensembles des données et
+      de n'utiliser l'ensemble de test qu'une seule fois.

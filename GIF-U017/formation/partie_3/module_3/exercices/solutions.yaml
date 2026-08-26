@@ -1,0 +1,37 @@
+- exercise_id: 195260b9-38b8-43f1-aedc-ee016077dc8a
+  reference_solution: '{2}'
+  feedback_list:
+  - answer: !!set
+      1: null
+    score: 0
+    explanation: Cette approche peut fonctionner, mais c'est moins astucieux de continuellement
+      augmenter les ressources informatiques alors qu'il y a d'autres solutions.
+  - answer: !!set
+      2: null
+    score: 1
+    explanation: Cette approche peut fonctionner, mais c'est moins astucieux d'utiliser
+      des ressources externes alors qu'il y a d'autres solutions.
+  - answer: !!set
+      3: null
+    score: 0
+    explanation: Cette approche permettrait de faire le calcul de l'exactitude sur
+      l'ensemble du jeu de données. Toutefois, cette approche reste lourde sur le
+      plan informatique.
+  - answer: !!set
+      4: null
+    score: 0
+    explanation: Cette approche a déjà été tentée et nécessite trop de temps de calcul
+      et de ressources informatiques.
+- exercise_id: 989c0fee-4828-4e8a-8458-693e489dc89d
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, avec cette approche, nous effectuons un échantillonnage
+      des moyennes des exactitudes. Ça permet ensuite d'approximer la vraie exactitude.
+      C’est plus rapide, tout en restant statistiquement viable.
+  - answer: false
+    score: 0
+    explanation: Avec cette approche, nous effectuons un échantillonnage des moyennes
+      des exactitudes. Ça permet ensuite d'approximer la vraie exactitude. C’est plus
+      rapide, tout en restant statistiquement viable.

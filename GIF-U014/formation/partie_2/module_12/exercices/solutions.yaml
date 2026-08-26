@@ -1,0 +1,29 @@
+- exercise_id: f1874d17-3158-4ef7-baa6-e18d0874ef73
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, c'est la prédiction de $y$ lorsque $x1=0$.
+  - answer: false
+    score: 0
+    explanation: C'est la prédiction de $y$ lorsque $x1=0$.
+- exercise_id: 6c37360c-faf0-45d9-9306-50c4999b3aa6
+  reference_solution: '5'
+  feedback_list:
+  - answer: 1
+    score: 0
+    explanation: Car l'ordonnée à l'origine de ce modèle est nulle.
+  - answer: 2
+    score: 0
+    explanation: Car ce modèle est indépendant de la température.
+  - answer: 3
+    score: 0
+    explanation: Car ce modèle augmente la consommation avec la température au lieu
+      de la réduire.
+  - answer: 4
+    score: 0
+    explanation: Car l'ordonnée à l'origine et la pente sont inversés.
+  - answer: 5
+    score: 1
+    explanation: Car l'ordonnée à l'origine est de 8 l/100km et la pente est de $-0,01$
+      l/100km par degré.

@@ -1,0 +1,11 @@
+- exercise_id: c45f3018-ff16-4f8b-9c25-4ab87544a5db
+  reference_solution: "def get_str(data):\n    return re.findall(r\"\"\"[\"|']([\\\
+    w\\s]+)[\"|']\"\"\", data)"
+  feedback_list: null
+- exercise_id: dcd83a22-33b0-41fa-8703-373382bffa25
+  reference_solution: "def enlever_numérotation(data):\n    return re.sub(r\"^\\d+\\\
+    s\", \"\", data, flags=re.MULTILINE)"
+  feedback_list: null
+- exercise_id: e732fd97-30e8-4d12-bc40-14e2898dfaf5
+  reference_solution: indicatifs = dict(re.findall(r"(\d+)\W([-\w]+)", data))
+  feedback_list: null

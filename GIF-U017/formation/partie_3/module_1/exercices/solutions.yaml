@@ -1,0 +1,30 @@
+- exercise_id: f84c7a34-bbaf-4749-aa4e-20165a060a57
+  reference_solution: "def padding_n_grammes(sentence, n):\n    return [\n       \
+    \ \"\".join(n_grammes)\n        for n_grammes in list(\n            ngrams(\n\
+    \                sentence,\n                n=n,\n                pad_left=True,\n\
+    \                pad_right=True,\n                left_pad_symbol=\"<s>\",\n \
+    \               right_pad_symbol=\"</s>\",\n            )\n        )\n    ]"
+  feedback_list: null
+- exercise_id: 7e671eb3-fb33-4789-a033-bb1feed72ee9
+  reference_solution: 'False'
+  feedback_list:
+  - answer: true
+    score: 0
+    explanation: Les modèles de langue utilisent le jeton `<UNK>` pour fonctionner
+      avec des mots n'ayant pas été vus durant l'entraînement.
+  - answer: false
+    score: 1
+    explanation: Effectivement, les modèles de langue utilisent le jeton `<UNK>` pour
+      fonctionner avec des mots n'ayant pas été vus durant l'entraînement.
+- exercise_id: 8d623e74-2567-48ed-af47-5090ad3ad1ff
+  reference_solution: 'True'
+  feedback_list:
+  - answer: true
+    score: 1
+    explanation: Effectivement, cette approche ajoute k à toutes les combinaisons
+      même celles non vues durant l'entraînement pour permettre les combinaisons de
+      mots inconnus.
+  - answer: false
+    score: 0
+    explanation: Cette approche ajoute k à toutes les combinaisons même celles non
+      vues durant l'entraînement pour permettre les combinaisons de mots inconnus.
