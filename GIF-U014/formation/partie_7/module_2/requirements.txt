@@ -1,4 +1,3 @@
 matplotlib
-mpl_toolkits
 numpy
 pylab
