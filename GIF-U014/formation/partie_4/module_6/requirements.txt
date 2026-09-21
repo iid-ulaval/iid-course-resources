@@ -1,4 +1,3 @@
-matplotlib
-mpl_toolkits
-numpy
-scikit-learn
+matplotlib==3.11.1
+numpy==2.5.2
+scikit-learn==1.9.0
