@@ -1,4 +1,4 @@
-paxutils
-poutyne
-torch
-torchvision
+pandas==3.0.5
+poutyne==1.19.0
+torch==2.13.0
+torchvision==0.28.0

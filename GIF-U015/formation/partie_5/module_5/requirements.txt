@@ -1,4 +1,4 @@
-poutyne
-torch
-torchvision
-wandb
+poutyne==1.19.0
+torch==2.13.0
+torchvision==0.28.0
+wandb==0.29.0
