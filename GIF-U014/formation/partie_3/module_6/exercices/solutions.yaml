@@ -3,7 +3,7 @@
   feedback_list:
   - answer: true
     score: 0
-    explanation: Mauvaise réponse! Si le modèle donne de moins bonnes prédictions
+    explanation: Si le modèle donne de moins bonnes prédictions
       qu'un classificateur aléatoire, ça veut dire qu'il prédira généralement la classe
       inverse de la vraie classe d'une donnée. Il y a donc probablement une erreur
       dans la règle de décision finale de la classification. Par exemple, seulement
@@ -11,7 +11,7 @@
       ROC de 0,9.
   - answer: false
     score: 1
-    explanation: Bonne réponse! Si le modèle donne de moins bonnes prédictions qu'un
+    explanation: Si le modèle donne de moins bonnes prédictions qu'un
       classificateur aléatoire, ça veut dire qu'il prédira généralement la classe
       inverse de la vraie classe d'une donnée. Il y a donc probablement une erreur
       dans la règle de décision finale de la classification. Par exemple, seulement
@@ -22,14 +22,14 @@
   feedback_list:
   - answer: true
     score: 0
-    explanation: Mauvaise réponse! Par exemple si un jeu de données possède 99 données
+    explanation: Par exemple si un jeu de données possède 99 données
       appartenant à une classe et 1 seule donnée à l'autre classe. On pourrait seulement
       utiliser un classificateur aléatoire avec $p=1$ et on obtiendrait une précision
       de 0,99. On doit donc toujours choisir nos métriques en fonction de la proportion
       des classes.
   - answer: false
     score: 1
-    explanation: Bonne réponse! Par exemple si un jeu de données possède 99 données
+    explanation: Par exemple si un jeu de données possède 99 données
       appartenant à une classe et 1 seule donnée à l'autre classe. On pourrait seulement
       utiliser un classificateur aléatoire avec $p=1$ et on obtiendrait une précision
       de 0,99. On doit donc toujours choisir nos métriques en fonction de la proportion
