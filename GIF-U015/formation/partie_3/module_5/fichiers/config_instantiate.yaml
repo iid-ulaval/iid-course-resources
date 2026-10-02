@@ -1,0 +1,4 @@
+reseau:
+  _target_: reseau.Reseau
+  nombre_de_couches: 7
+  activation: ReLU
