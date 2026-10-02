@@ -1,4 +1,4 @@
-matplotlib==3.11.1
+matplotlib==3.10.0
 poutyne==1.19.0
-scikit-learn==1.9.0
-torch==2.13.0
+scikit-learn==1.6.1
+torch==2.11.0
