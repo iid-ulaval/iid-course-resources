@@ -1,12 +1,8 @@
 function NeuralNetwork(element) {
-  d3.select(element).append("div").attr("class", "network-div");
-
-  this.svg = d3.select("div.network-div").append("svg");
-  this.svg.attr("class", "network");
+  this.div = d3.select(element).append("div").attr("class", "network-div");
 
   this.init = function (layerStructure, width, height, margin) {
-    this.svg = d3
-      .select("div.network-div")
+    this.svg = this.div
       .append("svg")
       .attr("class", "network")
       .attr("width", width)
@@ -240,24 +236,15 @@ function NeuralNetwork(element) {
     }
   };
 
-  this.reset = function() {
-    this.lines = this.svg.selectAll("line").data(this.links);
-    this.showTrainingCompletion();
-
-
-  };
-
   this.showTrainingCompletion = function() {
-    const div = document.querySelector(".network-div");
-    div.remove();
+    this.div.remove();
 
     const resultsDiv = document.createElement('div');
-    resultsDiv.textContent = "L'entrainement est complet!!";
+    resultsDiv.textContent = "L'entraînement est complet\u202F!";
     resultsDiv.classList.add('result-div');
 
     element.append(resultsDiv);
-
-  }
+  };
   
   function defineScale(domain, range, clamp = false) {
     return d3.scaleLinear().domain(domain).range(range).clamp(clamp);
@@ -268,8 +255,4 @@ function NeuralNetwork(element) {
 
     return scale((index + centering) / (total + centering));
   }
-
-
 }
-
-window.NeuralNetwork = NeuralNetwork;
