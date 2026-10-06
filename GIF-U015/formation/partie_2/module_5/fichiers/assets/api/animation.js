@@ -1,266 +1,258 @@
-require.undef("animation");
+function NeuralNetwork(element) {
+  this.div = d3.select(element).append("div").attr("class", "network-div");
 
-define("animation", ["d3"], function (d3) {
+  this.init = function (layerStructure, width, height, margin) {
+    this.svg = this.div
+      .append("svg")
+      .attr("class", "network")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", "0 0 " + width + " " + height)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  function NeuralNetwork(element) {
-    d3.select(element).append("div").attr("class", "network-div");
+    width = width - margin.left - margin.right;
+    height = height - margin.bottom - margin.top;
 
-    this.svg = d3.select("div.network-div").append("svg");
-    this.svg.attr("class", "network");
+    this.x_pos_scale = defineScale([0, 1], [0, width]);
+    this.y_pos_scale = defineScale([0, 1], [0, height]);
 
-    this.init = function (layerStructure, width, height, margin) {
-      this.svg = d3
-        .select("div.network-div")
-        .append("svg")
-        .attr("class", "network")
-        .attr("width", width)
-        .attr("height", height)
-        .attr("viewBox", "0 0 " + width + " " + height)
-        .attr("preserveAspectRatio", "xMidYMid meet")
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    this.layerStructure = layerStructure;
 
-      width = width - margin.left - margin.right;
-      height = height - margin.bottom - margin.top;
+    this.neurons = initNeurons(layerStructure);
 
-      this.x_pos_scale = defineScale([0, 1], [0, width]);
-      this.y_pos_scale = defineScale([0, 1], [0, height]);
+    this.circles = this.svg
+      .selectAll("circle")
+      .data(this.neurons)
+      .enter()
+      .append("circle");
 
-      this.layerStructure = layerStructure;
+    this.visualize_neurons(this.circles, layerStructure);
 
-      this.neurons = initNeurons(layerStructure);
+    this.links = initLinks(layerStructure);
 
-      this.circles = this.svg
-        .selectAll("circle")
-        .data(this.neurons)
-        .enter()
-        .append("circle");
+    this.lines = this.svg
+      .selectAll("line")
+      .data(this.links)
+      .enter()
+      .append("line");
 
-      this.visualize_neurons(this.circles, layerStructure);
+    this.visualize_links(this.lines, layerStructure, 0, true);
+  };
 
-      this.links = initLinks(layerStructure);
+  this.runEpoch = function (gradient, predictedClass) {
+    this.visualize_neurons(this.circles, this.layerStructure, predictedClass);
 
-      this.lines = this.svg
-        .selectAll("line")
-        .data(this.links)
-        .enter()
-        .append("line");
+    this.modifyLinksGradient(gradient);
 
-      this.visualize_links(this.lines, layerStructure, 0, true);
-    };
+    this.lines = this.svg.selectAll("line").data(this.links);
 
-    this.runEpoch = function (gradient, predictedClass) {
-      this.visualize_neurons(this.circles, this.layerStructure, predictedClass);
+    let minGradient = Math.min(...gradient.flat(4));
+    let maxGradient = Math.max(...gradient.flat(4));
+    let absoluteMeanGradient =
+      (Math.abs(minGradient) + Math.abs(maxGradient)) / 2;
 
-      this.modifyLinksGradient(gradient);
+    this.visualize_links(
+      this.lines,
+      this.layerStructure,
+      absoluteMeanGradient
+    );
+  };
 
-      this.lines = this.svg.selectAll("line").data(this.links);
+  this.visualize_neurons = function (circles, layerLengths, predicted_class) {
+    let num_layers = layerLengths.length;
 
-      let minGradient = Math.min(...gradient.flat(4));
-      let maxGradient = Math.max(...gradient.flat(4));
-      let absoluteMeanGradient =
-        (Math.abs(minGradient) + Math.abs(maxGradient)) / 2;
+    circles
+      .attr("cx", (d) => {
+        return getElementPosition(d[0], num_layers * 0.7, this.x_pos_scale);
+      })
+      .attr("cy", (d) => {
+        return getElementPosition(
+          d[1],
+          layerLengths[d[0]],
+          this.y_pos_scale,
+          true
+        );
+      })
+      .attr("r", 15)
+      .attr("fill", (d) => {
+        if (d[0] === 0) {
+          return "black";
+        } 
+        else if (d[0] === num_layers-1) {
+          return "white";
+        }
+        else if (
+          typeof predicted_class !== "undefined" &&
+          d[0] === num_layers - 1 &&
+          d[1] === predicted_class
+        ) {
+          return "green";
+        } else {
+          return "grey";
+        }
+      })
+      .attr("class", "neuron");
+  };
 
-      this.visualize_links(
-        this.lines,
-        this.layerStructure,
-        absoluteMeanGradient
-      );
-    };
+  this.visualize_links = function (
+    lines,
+    layerLengths,
+    mean,
+    staticLinks = false
+  ) {
+    let num_layers = layerLengths.length;
 
-    this.visualize_neurons = function (circles, layerLengths, predicted_class) {
-      let num_layers = layerLengths.length;
+    let colorScale = defineScale(
+      [-mean, 0, mean],
+      ["#a50026", "#ffffbf", "#313695"],
+      true
+    );
 
-      circles
-        .attr("cx", (d) => {
-          return getElementPosition(d[0], num_layers * 0.7, this.x_pos_scale);
-        })
-        .attr("cy", (d) => {
-          return getElementPosition(
-            d[1],
-            layerLengths[d[0]],
-            this.y_pos_scale,
-            true
-          );
-        })
-        .attr("r", 15)
-        .attr("fill", (d) => {
-          if (d[0] === 0) {
-            return "black";
-          } 
-          else if (d[0] === num_layers-1) {
-            return "white";
-          }
-          else if (
-            typeof predicted_class !== "undefined" &&
-            d[0] === num_layers - 1 &&
-            d[1] === predicted_class
-          ) {
-            return "green";
-          } else {
-            return "grey";
-          }
-        })
-        .attr("class", "neuron");
-    };
+    let thicknessScale = defineScale([0, mean], [3, 8], true);
 
-    this.visualize_links = function (
-      lines,
-      layerLengths,
-      mean,
-      staticLinks = false
-    ) {
-      let num_layers = layerLengths.length;
-
-      let colorScale = defineScale(
-        [-mean, 0, mean],
-        ["#a50026", "#ffffbf", "#313695"],
-        true
-      );
-
-      let thicknessScale = defineScale([0, mean], [3, 8], true);
-
-      lines
-        .attr("x1", (d) => {
-          return (
-            getElementPosition(
-              d.inputNeuron[0],
-              num_layers * 0.7,
-              this.x_pos_scale
-            ) + 15
-          );
-        })
-        .attr("y1", (d) => {
-          return getElementPosition(
-            d.inputNeuron[1],
-            layerLengths[d.inputNeuron[0]],
-            this.y_pos_scale,
-            true
-          );
-        })
-        .attr("x2", (d) => {
-          return (
-            getElementPosition(
-              d.outputNeuron[0],
-              num_layers * 0.7,
-              this.x_pos_scale
-            ) - 15
-          );
-        })
-        .attr("y2", (d) => {
-          return getElementPosition(
-            d.outputNeuron[1],
-            layerLengths[d.outputNeuron[0]],
-            this.y_pos_scale,
-            true
-          );
-        })
-        .attr("stroke-width", (d) => {
-          return thicknessScale(Math.abs(d.partialDerivative));
-        })
-        .attr("stroke", (d) => {
-          return colorScale(d.partialDerivative);
-        })
-        .attr("class", (d) => {
-          if (staticLinks === true) {
-            return "link static";
-          } else if (d.inputNeuron[0] === 0) {
-            return "link slow";
-          } else {
-            return "link fast";
-          }
-        });
-    };
-
-    function initNeurons(layerStructure) {
-      let neurons = [];
-
-      layerStructure.forEach((numberOfNeurons, layerIndex) => {
-        for (let i = 0; i < numberOfNeurons; i++) {
-          neurons.push([layerIndex, i]);
+    lines
+      .attr("x1", (d) => {
+        return (
+          getElementPosition(
+            d.inputNeuron[0],
+            num_layers * 0.7,
+            this.x_pos_scale
+          ) + 15
+        );
+      })
+      .attr("y1", (d) => {
+        return getElementPosition(
+          d.inputNeuron[1],
+          layerLengths[d.inputNeuron[0]],
+          this.y_pos_scale,
+          true
+        );
+      })
+      .attr("x2", (d) => {
+        return (
+          getElementPosition(
+            d.outputNeuron[0],
+            num_layers * 0.7,
+            this.x_pos_scale
+          ) - 15
+        );
+      })
+      .attr("y2", (d) => {
+        return getElementPosition(
+          d.outputNeuron[1],
+          layerLengths[d.outputNeuron[0]],
+          this.y_pos_scale,
+          true
+        );
+      })
+      .attr("stroke-width", (d) => {
+        return thicknessScale(Math.abs(d.partialDerivative));
+      })
+      .attr("stroke", (d) => {
+        return colorScale(d.partialDerivative);
+      })
+      .attr("class", (d) => {
+        if (staticLinks === true) {
+          return "link static";
+        } else if (d.inputNeuron[0] === 0) {
+          return "link slow";
+        } else {
+          return "link fast";
         }
       });
+  };
 
-      return neurons;
-    }
+  function initNeurons(layerStructure) {
+    let neurons = [];
 
-    function initLinks(layerStructure) {
-      let links = [];
+    layerStructure.forEach((numberOfNeurons, layerIndex) => {
+      for (let i = 0; i < numberOfNeurons; i++) {
+        neurons.push([layerIndex, i]);
+      }
+    });
 
-      for (let layer = 1; layer < layerStructure.length; layer++) {
+    return neurons;
+  }
+
+  function initLinks(layerStructure) {
+    let links = [];
+
+    for (let layer = 1; layer < layerStructure.length; layer++) {
+      for (
+        let outputNeuron = 0;
+        outputNeuron < layerStructure[layer];
+        outputNeuron++
+      ) {
         for (
-          let outputNeuron = 0;
-          outputNeuron < layerStructure[layer];
-          outputNeuron++
+          let inputNeuron = 0;
+          inputNeuron < layerStructure[layer - 1];
+          inputNeuron++
         ) {
-          for (
-            let inputNeuron = 0;
-            inputNeuron < layerStructure[layer - 1];
-            inputNeuron++
-          ) {
-            links.push({
-              outputNeuron: [layer, outputNeuron],
-              inputNeuron: [layer - 1, inputNeuron],
-              partialDerivative: 0,
-            });
-          }
+          links.push({
+            outputNeuron: [layer, outputNeuron],
+            inputNeuron: [layer - 1, inputNeuron],
+            partialDerivative: 0,
+          });
         }
       }
-      return links;
+    }
+    return links;
+  }
+
+  this.modifyLinksGradient = function (gradient) {
+    let inputLength = this.layerStructure[0];
+    let numProcessed = 0;
+
+    for (
+      let firstLayerNeuron = 0;
+      firstLayerNeuron < gradient[0].length;
+      firstLayerNeuron++
+    ) {
+      for (let initialInput = 0; initialInput < inputLength; initialInput++) {
+        this.links[numProcessed].partialDerivative =
+          gradient[0][firstLayerNeuron][initialInput];
+        numProcessed++;
+      }
     }
 
-    this.modifyLinksGradient = function (gradient) {
-      let inputLength = this.layerStructure[0];
-      let numProcessed = 0;
-
+    for (let layer = 1; layer < gradient.length; layer++) {
       for (
-        let firstLayerNeuron = 0;
-        firstLayerNeuron < gradient[0].length;
-        firstLayerNeuron++
+        let outputNeuron = 0;
+        outputNeuron < gradient[layer].length;
+        outputNeuron++
       ) {
-        for (let initialInput = 0; initialInput < inputLength; initialInput++) {
+        for (
+          let inputNeuron = 0;
+          inputNeuron < gradient[layer - 1].length;
+          inputNeuron++
+        ) {
           this.links[numProcessed].partialDerivative =
-            gradient[0][firstLayerNeuron][initialInput];
+            gradient[layer][outputNeuron][inputNeuron];
           numProcessed++;
         }
       }
-
-      for (let layer = 1; layer < gradient.length; layer++) {
-        for (
-          let outputNeuron = 0;
-          outputNeuron < gradient[layer].length;
-          outputNeuron++
-        ) {
-          for (
-            let inputNeuron = 0;
-            inputNeuron < gradient[layer - 1].length;
-            inputNeuron++
-          ) {
-            this.links[numProcessed].partialDerivative =
-              gradient[layer][outputNeuron][inputNeuron];
-            numProcessed++;
-          }
-        }
-      }
-    };
-
-    this.reset = function() {
-      this.lines = this.svg.selectAll("line").data(this.links);
-      this.visualize_links(this.lines, this.layerStructure, 0, true);
     }
+  };
 
-    function defineScale(domain, range, clamp = false) {
-      return d3.scaleLinear().domain(domain).range(range).clamp(clamp);
-    }
+  this.showTrainingCompletion = function() {
+    this.div.remove();
 
-    function getElementPosition(index, total, scale, center = false) {
-      let centering = center ? 1 : 0;
+    const resultsDiv = document.createElement('div');
+    resultsDiv.textContent = "L'entraînement est complet\u202F!";
+    resultsDiv.classList.add('result-div');
 
-      return scale((index + centering) / (total + centering));
-    }
-
+    element.append(resultsDiv);
+  };
+  
+  function defineScale(domain, range, clamp = false) {
+    return d3.scaleLinear().domain(domain).range(range).clamp(clamp);
   }
 
-  return NeuralNetwork;
-  ////////////
-});
+  function getElementPosition(index, total, scale, center = false) {
+    let centering = center ? 1 : 0;
+
+    return scale((index + centering) / (total + centering));
+  }
+}
