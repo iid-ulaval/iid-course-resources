@@ -12,7 +12,7 @@
     explanation: Effectivement, si on obtient une aire sous la courbe ROC de 1, on
       peut conclure que les valeurs manquantes sont probablement facilement trouvables
       à partir des autres variables exogènes. On peut donc supposer que les valeurs
-      aberrantes ne sont pas MCAR.
+      manquantes ne sont pas MCAR.
 - exercise_id: b69617a7-86a6-4495-8be8-a43132c1c7d4
   reference_solution: 'False'
   feedback_list:
