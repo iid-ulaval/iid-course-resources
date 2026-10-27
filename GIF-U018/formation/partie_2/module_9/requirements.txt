@@ -1,10 +1,6 @@
-gensim
-nltk
-numpy
-pandas
-paxutils
-plotly
-poutyne
-torch
-torchtext
-tqdm
+gensim==4.4.0
+nltk==3.9.1
+pandas==2.2.3
+poutyne==1.19.0
+torch==2.11.0
+tqdm==4.67.3
