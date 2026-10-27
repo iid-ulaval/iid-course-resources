@@ -1,7 +1,7 @@
-gensim
-nltk
-numpy
-paxutils
-poutyne
-torch
-torchtext
+gensim==4.4.0
+nltk==3.9.1
+numpy==2.1.3
+paxutils==0.3.0
+poutyne==1.19.0
+torch==2.11.0
+torchtext==0.6.0
