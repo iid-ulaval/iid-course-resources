@@ -1,2 +1,2 @@
-gensim
-numpy
+gensim==4.4.0
+numpy==2.1.3
