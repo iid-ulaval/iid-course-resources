@@ -1,2 +1,2 @@
-torch
-torchtext
+torch==2.11.0
+torchtext==0.6.0
