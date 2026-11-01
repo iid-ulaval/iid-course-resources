@@ -1,6 +1,5 @@
-matplotlib
-paxutils
-poutyne
-torch
-torchsummary
-torchvision
+matplotlib==3.10.0
+poutyne==1.19.0
+torch==2.11.0
+torchsummary==1.5.1
+torchvision==0.26.0
