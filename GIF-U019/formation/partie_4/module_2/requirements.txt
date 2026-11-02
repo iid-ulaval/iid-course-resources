@@ -1,4 +1,5 @@
-numpy
-paxutils
-poutyne
-torch
+numpy==2.1.3
+pillow==11.3.0
+poutyne==1.19.0
+torch==2.11.0
+torchvision==0.26.0
