@@ -1,8 +1,7 @@
-IPython
-matplotlib
-numpy
-paxutils
-poutyne
-torch
-torchvision
-tqdm
+ipython==7.34.0
+matplotlib==3.10.0
+numpy==2.1.3
+poutyne==1.19.0
+torch==2.11.0
+torchvision==0.26.0
+tqdm==4.67.3
